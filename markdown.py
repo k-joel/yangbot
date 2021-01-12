@@ -5,8 +5,8 @@ from bs4 import NavigableString, Tag
 IGNORED_CLASSES = ['check', 'material-icons']
 
 
-def add_line(index, n=1):
-    return '\n' * n if index > 0 else ''
+def add_line(index):
+    return '\n\n' if index > 0 else ''
 
 
 def strip_and_enclose(string, es):
@@ -42,15 +42,15 @@ def format_section_tag(section, index, is_ord, text):
         href = section['href']
         return '[' + text.strip() + '](' + URL_PREFIX + href.strip().replace(' ', '%20') + ')'
     if section.name == 'li':
-        s = add_line(index, 2)
+        s = add_line(index)
         s += str(index) + '.' if is_ord else '-'
         return s + ' ' + text.strip()
     if section.name == 'ol' or section.name == 'ul' or section.name == 'div' or section.name == 'p':
-        return add_line(index, 2) + text
+        return add_line(index) + text
     if section.name[0] == 'h' and len(section.name) == 2:
         n = int(section.name[1])
         if n >= 1 and n <= 6:
-            return add_line(index, 2) + ('#' * n) + ' ' + text.strip() + '\n------'
+            return add_line(index) + ('#' * n) + ' ' + text.strip() + '\n------'
     return ''
 
 

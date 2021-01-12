@@ -5,7 +5,7 @@ import sys
 import os
 import requests
 import json
-from bs4 import BeautifulSoup, NavigableString, Tag
+from bs4 import BeautifulSoup
 from fuzzywuzzy import process
 from markdown import format_section
 
@@ -27,7 +27,7 @@ POLICY_ALIASES = {
 
 COMMAND = 'yangbot'
 MIN_PHRASE_LEN = 3
-DUMP_FILE = 'dump.txt'
+DUMP_FILE = 'dump.json'
 TEST_FILE = 'test.md'
 LOG_FILE = 'log.txt'
 
@@ -134,10 +134,9 @@ def append_log(text):
 
 def dev_main(phrase):
     text = match_and_extract_data(phrase)
-    if not text:
-        return
-    print(text)
-    # dump_text_to_file(text)
+    if text:
+        print(text)
+        # dump_text_to_file(text)
 
 
 def main():
@@ -159,15 +158,14 @@ def main():
 
         phrase = comment.body.splitlines()[0][init_len:].lower()
 
-        text = None
         try:
             text = match_and_extract_data(phrase)
             if not text:
                 continue
+
+            comment.reply(text)
         except:
             append_log('error scraping phrase: ' + phrase)
-
-        comment.reply(text)
 
 
 if __name__ == "__main__":
