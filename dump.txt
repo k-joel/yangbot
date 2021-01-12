@@ -1,0 +1,1906 @@
+[
+    {
+        "id": 565991,
+        "title": "Support for Transgender Individuals",
+        "url": "/policies/support-for-transgender-individuals/",
+        "order": "107",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 565990,
+        "title": "Inclusivity for LGBTQ+ Youth in Schools",
+        "url": "/policies/inclusivity-for-lgbtq-youth-in-schools/",
+        "order": "111",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 565865,
+        "title": "Guaranteed Childcare",
+        "url": "/policies/guaranteed-childcare/",
+        "order": "73",
+        "categories": [
+            {
+                "id": "women",
+                "title": "Women"
+            }
+        ]
+    },
+    {
+        "id": 565833,
+        "title": "Working Conditions During Pregnancy",
+        "url": "/policies/working-conditions-during-pregnancy/",
+        "order": "130",
+        "categories": [
+            {
+                "id": "women",
+                "title": "Women"
+            }
+        ]
+    },
+    {
+        "id": 565827,
+        "title": "Women in Leadership",
+        "url": "/policies/women-in-leadership/",
+        "order": "65",
+        "categories": [
+            {
+                "id": "women",
+                "title": "Women"
+            }
+        ]
+    },
+    {
+        "id": 565832,
+        "title": "Women&#8217;s Right to Choose",
+        "url": "/policies/womens-right-to-choose/",
+        "order": "7",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            },
+            {
+                "id": "women",
+                "title": "Women"
+            }
+        ]
+    },
+    {
+        "id": 565838,
+        "title": "Empowering Unions in the 21st Century",
+        "url": "/policies/empowering-unions-in-the-21st-century/",
+        "order": "57",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 565824,
+        "title": "Ending Predatory Payday Loans",
+        "url": "/policies/payday-loans/",
+        "order": "80",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 545931,
+        "title": "Clean Water is a Human Right",
+        "url": "/policies/clean-water-is-a-human-right/",
+        "order": "126",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 487802,
+        "title": "Care for People with Disabilities",
+        "url": "/policies/care-for-people-with-disabilities/",
+        "order": "48",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 475840,
+        "title": "Preventative Care and Food Security",
+        "url": "/policies/preventative-care-and-food-security/",
+        "order": "51",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 448250,
+        "title": "Investing in Telehealth",
+        "url": "/policies/investing-in-telehealth/",
+        "order": "100",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 76750,
+        "title": "Amend the Voting Rights Act",
+        "url": "/policies/amend-the-voting-rights-act/",
+        "order": "105",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 76613,
+        "title": "Prohibit Voter ID Laws",
+        "url": "/policies/prohibit-voter-id-laws/",
+        "order": "92",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 76487,
+        "title": "Early Voting and Vote by Mail",
+        "url": "/policies/early-voting-and-vote-by-mail/",
+        "order": "151",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 76216,
+        "title": "Native American Voting Rights and Polling Locations",
+        "url": "/policies/native-american-voting-rights-and-polling-locations/",
+        "order": "135",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 76076,
+        "title": "Voting for People with Disabilities (PWD)",
+        "url": "/policies/voting-for-people-with-disabilities-pwd/",
+        "order": "150",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 75914,
+        "title": "Election Security",
+        "url": "/policies/election-security/",
+        "order": "98",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 19430,
+        "title": "Minimize Harm of Modern Tech on Our Children",
+        "url": "/policies/minimize-harm-of-modern-tech-on-our-children/",
+        "order": "25",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 19423,
+        "title": "Federally Regulate Online Poker",
+        "url": "/policies/regulate-online-poker/",
+        "order": "79",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 5306,
+        "title": "End Active Shooter Drills",
+        "url": "/policies/end-active-shooter-drills/",
+        "order": "28",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 5130,
+        "title": "End the Filibuster",
+        "url": "/policies/end-the-filibuster/",
+        "order": "113",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 5129,
+        "title": "Stop the D.C. Revolving Door",
+        "url": "/policies/stop-the-d-c-revolving-door/",
+        "order": "34",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 5128,
+        "title": "Reform the FEC",
+        "url": "/policies/reform-the-fec/",
+        "order": "128",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 4846,
+        "title": "Fight the Spread of Hateful Ideas",
+        "url": "/policies/fight-the-spread-of-hateful-ideas/",
+        "order": "99",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 4820,
+        "title": "Improving Our Political Rhetoric",
+        "url": "/policies/improving-our-political-rhetoric/",
+        "order": "141",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 4340,
+        "title": "Geoengineering",
+        "url": "/policies/geoengineering/",
+        "order": "71",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4339,
+        "title": "Flood Prevention",
+        "url": "/policies/flood-prevention/",
+        "order": "145",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4338,
+        "title": "Positive Use of Military Expertise",
+        "url": "/policies/positive-use-of-military-expertise/",
+        "order": "53",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            },
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 4337,
+        "title": "Sustainable Development",
+        "url": "/policies/sustainable-development/",
+        "order": "121",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            },
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 4336,
+        "title": "Using Trade Deals to Fight Climate Change",
+        "url": "/policies/using-trade-deals-to-fight-climate-change/",
+        "order": "109",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            },
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 4335,
+        "title": "Powering a Sustainable World",
+        "url": "/policies/powering-a-sustainable-world/",
+        "order": "132",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            },
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 4334,
+        "title": "Financing a Sustainable Economy",
+        "url": "/policies/financing-a-sustainable-economy/",
+        "order": "",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4333,
+        "title": "Sustainable Practices &#8211; Buildings, Materials, Storage",
+        "url": "/policies/sustainable-practices-buildings-materials-storage/",
+        "order": "152",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4332,
+        "title": "Sustainable Agriculture",
+        "url": "/policies/sustainable-agriculture/",
+        "order": "78",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4329,
+        "title": "Renewable Energy",
+        "url": "/policies/renewable-energy/",
+        "order": "117",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4328,
+        "title": "Hold Future Administrations Accountable",
+        "url": "/policies/hold-future-administrations-accountable/",
+        "order": "55",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4327,
+        "title": "Move to Higher Ground",
+        "url": "/policies/move-to-higher-ground/",
+        "order": "75",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4326,
+        "title": "Invest in Research and Adaptation",
+        "url": "/policies/invest-in-research-and-adaptation/",
+        "order": "",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4325,
+        "title": "Sustainable Transportation",
+        "url": "/policies/sustainable-transportation/",
+        "order": "125",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4324,
+        "title": "Fossil Fuels: Their Days Are Over",
+        "url": "/policies/fossil-fuels-their-days-are-over/",
+        "order": "102",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 4313,
+        "title": "Supporting Historically Black Colleges and Universities",
+        "url": "/policies/supporting-historically-black-colleges-and-universities/",
+        "order": "41",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 4209,
+        "title": "Fighting the Rise of White Nationalism and Extremism",
+        "url": "/policies/fight-white-nationalism-extremism/",
+        "order": "68",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 3540,
+        "title": "Veteran Employment and Businesses",
+        "url": "/policies/veteran-employment-and-businesses/",
+        "order": "95",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3542,
+        "title": "Ending Veteran Suicide",
+        "url": "/policies/ending-veteran-suicide/",
+        "order": "76",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3547,
+        "title": "Every Vet Under a Roof Initiative",
+        "url": "/policies/every-vet-under-a-roof-initiative/",
+        "order": "115",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3544,
+        "title": "Controlled Substance Waivers for Veterans",
+        "url": "/policies/controlled-substance-waivers-for-veterans/",
+        "order": "134",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3541,
+        "title": "Improving Veteran Health",
+        "url": "/policies/improving-veteran-health/",
+        "order": "154",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3543,
+        "title": "Military Training: The Gold Standard",
+        "url": "/policies/military-training-the-gold-standard/",
+        "order": "104",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3538,
+        "title": "GI Bill Improvements",
+        "url": "/policies/gi-bill-improvements/",
+        "order": "",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3539,
+        "title": "Reverse Boot Camp",
+        "url": "/policies/reverse-boot-camp/",
+        "order": "47",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 3044,
+        "title": "12-Year Congressional Term Limits",
+        "url": "/policies/12-year-congressional-term-limits/",
+        "order": "",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 3036,
+        "title": "End Bidding Wars for Corporate Relocation",
+        "url": "/policies/end-relocation-bidding/",
+        "order": "114",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 3035,
+        "title": "Preservation of Public Lands and Water",
+        "url": "/policies/public-land-preservation/",
+        "order": "139",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 2719,
+        "title": "Timing of Payments for Small Businesses",
+        "url": "/policies/payment-small-businesses/",
+        "order": "93",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 2686,
+        "title": "Data as a Property Right",
+        "url": "/policies/data-property-right/",
+        "order": "32",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 2703,
+        "title": "Reduce Wildfires",
+        "url": "/policies/reduce-wildfires/",
+        "order": "127",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 2685,
+        "title": "Control the Cost of Prescription Drugs",
+        "url": "/policies/prescription-drug-costs/",
+        "order": "33",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 2684,
+        "title": "Restoration of Voting Rights for Felons",
+        "url": "/policies/restore-voting-rights/",
+        "order": "40",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            },
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 2666,
+        "title": "Improving the Electoral College",
+        "url": "/policies/proportional-electors/",
+        "order": "35",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 2665,
+        "title": "Crypto/Digital Asset Regulation and Consumer Protection",
+        "url": "/policies/digital-asset-regulation/",
+        "order": "108",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 2664,
+        "title": "Automatic and Same-Day Voter Registration",
+        "url": "/policies/automatic-voter-registration/",
+        "order": "149",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 2667,
+        "title": "Medicare for All",
+        "url": "/policies/medicare-for-all/",
+        "order": "2",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 2650,
+        "title": "Expand Selective Schools",
+        "url": "/policies/expand-selective-schools/",
+        "order": "77",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 2649,
+        "title": "Make Washington, DC, a State",
+        "url": "/policies/dc-statehood/",
+        "order": "89",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 2648,
+        "title": "Grid Modernization Race to the Top",
+        "url": "/policies/grid-modernization/",
+        "order": "146",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 2640,
+        "title": "Head of Culture and Ceremony",
+        "url": "/policies/head-of-culture-and-ceremony/",
+        "order": "131",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 2635,
+        "title": "End Partisan Gerrymandering",
+        "url": "/policies/end-gerrymandering/",
+        "order": "124",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 2633,
+        "title": "Reduce Packaging Waste",
+        "url": "/policies/reduce-packaging-waste/",
+        "order": "122",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 2632,
+        "title": "Public Council of Advisors",
+        "url": "/policies/public-advisors/",
+        "order": "153",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 2628,
+        "title": "Quantum Computing and Encryption Standards",
+        "url": "/policies/quantum-computing/",
+        "order": "87",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 2622,
+        "title": "Make Election Day a Holiday",
+        "url": "/policies/election-day-holiday/",
+        "order": "119",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 2624,
+        "title": "The Penny Makes No Cents",
+        "url": "/policies/no-pennies/",
+        "order": "44",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 2623,
+        "title": "Empowering MMA Fighters",
+        "url": "/policies/empowering-mma-fighters/",
+        "order": "22",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 2617,
+        "title": "18 Year Term Limit for Supreme Court Justices",
+        "url": "/policies/scotustermlimits/",
+        "order": "83",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 2605,
+        "title": "Revive the Office of Technology Assessment",
+        "url": "/policies/reviveota/",
+        "order": "140",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 2608,
+        "title": "Lower the Voting Age to 16",
+        "url": "/policies/votingage/",
+        "order": "42",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 2598,
+        "title": "Decrease Pre-Trial Cash Bail",
+        "url": "/policies/cashbail/",
+        "order": "62",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 2584,
+        "title": "Extend Daylight Saving Time All Year",
+        "url": "/policies/extend-daylight-savings-time-all-year/",
+        "order": "46",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 2580,
+        "title": "Relocate Federal Agencies",
+        "url": "/policies/relocatefederalagencies/",
+        "order": "120",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 2568,
+        "title": "Democracy Dollars",
+        "url": "/policies/democracydollars/",
+        "order": "12",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 2576,
+        "title": "Ranked Choice Voting",
+        "url": "/policies/rankedchoice/",
+        "order": "15",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 1674,
+        "title": "Decriminalize Opioids",
+        "url": "/policies/decriminalizeopioids/",
+        "order": "29",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 2079,
+        "title": "Support the DREAM Act",
+        "url": "/policies/support-the-dream-act/",
+        "order": "20",
+        "categories": [
+            {
+                "id": "immigration",
+                "title": "Immigration"
+            }
+        ]
+    },
+    {
+        "id": 2077,
+        "title": "Pathway to Citizenship for Undocumented Immigrants",
+        "url": "/policies/pathway-to-citizenship/",
+        "order": "16",
+        "categories": [
+            {
+                "id": "immigration",
+                "title": "Immigration"
+            }
+        ]
+    },
+    {
+        "id": 2078,
+        "title": "Southern Border Security",
+        "url": "/policies/southern-border-security/",
+        "order": "10",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            },
+            {
+                "id": "immigration",
+                "title": "Immigration"
+            }
+        ]
+    },
+    {
+        "id": 2066,
+        "title": "Foreign Policy First Principles",
+        "url": "/policies/foreign-policy-first-principles/",
+        "order": "14",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 1937,
+        "title": "Modern Time Banking",
+        "url": "/policies/modern-time-banking/",
+        "order": "36",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 1603,
+        "title": "Support for the Arts",
+        "url": "/policies/support-for-the-arts/",
+        "order": "110",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 1371,
+        "title": "Fight for Equal Pay",
+        "url": "/policies/fight-for-equal-pay/",
+        "order": "66",
+        "categories": [
+            {
+                "id": "women",
+                "title": "Women"
+            }
+        ]
+    },
+    {
+        "id": 1189,
+        "title": "Carbon Fee and Dividend",
+        "url": "/policies/carbon-fee-dividend/",
+        "order": "96",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 637,
+        "title": "Make Puerto Rico a State",
+        "url": "/policies/puerto-rican-statehood/",
+        "order": "70",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 635,
+        "title": "Prevent Airlines from Removing Customers",
+        "url": "/policies/prevent-airlines-removing-customers/",
+        "order": "85",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 634,
+        "title": "Prevent Corruption in the Federal Government",
+        "url": "/policies/prevent-regulatory-capture-and-corruption/",
+        "order": "58",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 633,
+        "title": "Limit Bureaucracy in the Federal Workforce",
+        "url": "/policies/downsizing-federal-workforce/",
+        "order": "136",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 632,
+        "title": "Automatically Sunset Old Laws",
+        "url": "/policies/automatically-sunsetting-old-laws/",
+        "order": "84",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 630,
+        "title": "Support the Revival of Earmarks",
+        "url": "/policies/support-revival-earmarks/",
+        "order": "137",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 627,
+        "title": "Closely Monitor Mental Health of White House Staff",
+        "url": "/policies/white-house-psychologist/",
+        "order": "129",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 625,
+        "title": "American Exchange Program",
+        "url": "/policies/american-exchange-program/",
+        "order": "81",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 624,
+        "title": "Every Cop Gets a Camera",
+        "url": "/policies/every-cop-gets-camera/",
+        "order": "60",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 623,
+        "title": "Free Marriage Counseling for All",
+        "url": "/policies/free-marriage-counseling/",
+        "order": "97",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 621,
+        "title": "Prosperity Grants",
+        "url": "/policies/prosperity-grants/",
+        "order": "112",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 620,
+        "title": "Increase Assistance for Single Parents",
+        "url": "/policies/single-parent-assistance/",
+        "order": "61",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            },
+            {
+                "id": "women",
+                "title": "Women"
+            }
+        ]
+    },
+    {
+        "id": 618,
+        "title": "Invest in America&#8217;s Mental Health",
+        "url": "/policies/mental-health/",
+        "order": "43",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 617,
+        "title": "Fund Medical Technology Innovation",
+        "url": "/policies/medical-technology-innovation/",
+        "order": "148",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 615,
+        "title": "Opioid Crisis",
+        "url": "/policies/opioid-crisis/",
+        "order": "24",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 613,
+        "title": "Fund Autism Intervention",
+        "url": "/policies/autism-intervention-funding/",
+        "order": "69",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 612,
+        "title": "Right to Privacy/Abortion and Contraception",
+        "url": "/policies/right-privacy-abortion-contraception/",
+        "order": "19",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            },
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 610,
+        "title": "Expand Access to Medical Experts",
+        "url": "/policies/expanding-medical-licensure/",
+        "order": "138",
+        "categories": [
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 609,
+        "title": "Make it Easier to Save for Retirement",
+        "url": "/policies/telescoping-retirement-accounts/",
+        "order": "79",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 607,
+        "title": "Free Financial Counseling for All",
+        "url": "/policies/financial-counseling/",
+        "order": "133",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 605,
+        "title": "The Freedom Dividend",
+        "url": "/policies/the-freedom-dividend/",
+        "order": "1",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 603,
+        "title": "Early Childhood Education for All",
+        "url": "/policies/early-childhood-education/",
+        "order": "67",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            },
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 601,
+        "title": "Control the Cost of Higher Education",
+        "url": "/policies/controlling-cost-higher-education/",
+        "order": "26",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 599,
+        "title": "Make Community College Affordable for All",
+        "url": "/policies/close-skills-gap-community-college/",
+        "order": "90",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 597,
+        "title": "Life-Skills Education in All High Schools",
+        "url": "/policies/life-skills-education/",
+        "order": "56",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 596,
+        "title": "Promote Vocational Education",
+        "url": "/policies/promoting-vocational-education/",
+        "order": "39",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 595,
+        "title": "Increase Teacher Salaries",
+        "url": "/policies/teacher-salaries/",
+        "order": "50",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 594,
+        "title": "Reduce Student Loan Burden",
+        "url": "/policies/student-loan-debt/",
+        "order": "6",
+        "categories": [
+            {
+                "id": "education",
+                "title": "Education"
+            }
+        ]
+    },
+    {
+        "id": 593,
+        "title": "Make it Easy for Americans to Move for Work",
+        "url": "/policies/get-america-moving/",
+        "order": "101",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 592,
+        "title": "Implement Mandatory Paid Leave Policy",
+        "url": "/policies/mandatory-vacation/",
+        "order": "103",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 591,
+        "title": "Paid Family Leave",
+        "url": "/policies/paid-family-leave/",
+        "order": "30",
+        "categories": [
+            {
+                "id": "women",
+                "title": "Women"
+            }
+        ]
+    },
+    {
+        "id": 590,
+        "title": "Ease the Transition to Self-Driving Vehicles",
+        "url": "/policies/trucking-czar/",
+        "order": "86",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 588,
+        "title": "Capital Gain/Carried Interest Tax",
+        "url": "/policies/capital-gain-carried-interest-tax/",
+        "order": "54",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 586,
+        "title": "Financial Transaction Tax",
+        "url": "/policies/financial-transaction-tax/",
+        "order": "59",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 585,
+        "title": "Modernize Military Spending",
+        "url": "/policies/rechannel-military-spending/",
+        "order": "38",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 583,
+        "title": "Nuclear Launch Decisions",
+        "url": "/policies/nuclear-launch/",
+        "order": "72",
+        "categories": [
+            {
+                "id": "foreign-policy",
+                "title": "Foreign Policy"
+            }
+        ]
+    },
+    {
+        "id": 582,
+        "title": "NCAA Should Pay Athletes",
+        "url": "/policies/ncaa-pay-athletes/",
+        "order": "74",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 581,
+        "title": "Tort Reform/Reasonableness Dismissals",
+        "url": "/policies/tort-reform-reasonableness-dismissals/",
+        "order": "147",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 580,
+        "title": "Local Journalism Fund",
+        "url": "/policies/local-journalism-fund/",
+        "order": "91",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 579,
+        "title": "American Journalism Fellows",
+        "url": "/policies/american-journalism-fellows/",
+        "order": "140",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 578,
+        "title": "American Mall Act",
+        "url": "/policies/american-mall-act/",
+        "order": "37",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 577,
+        "title": "Rebuild American Infrastructure",
+        "url": "/policies/rebuild-america/",
+        "order": "106",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 574,
+        "title": "Entice High-Skill Individuals",
+        "url": "/policies/enticing-high-skill-individuals/",
+        "order": "52",
+        "categories": [
+            {
+                "id": "immigration",
+                "title": "Immigration"
+            }
+        ]
+    },
+    {
+        "id": 571,
+        "title": "Zoning",
+        "url": "/policies/zoning/",
+        "order": "49",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 570,
+        "title": "Gun Safety",
+        "url": "/policies/gun-safety/",
+        "order": "4",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 568,
+        "title": "Provide Basic Banking Services through the Post Office",
+        "url": "/policies/post-offices-provide-basic-banking-services/",
+        "order": "94",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 566,
+        "title": "Algorithmic Trading/Fraud",
+        "url": "/policies/algorithmic-trading-fraud/",
+        "order": "123",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 561,
+        "title": "Combat Climate Change- Achieve Net-Zero Emissions by 2049",
+        "url": "/policies/climate-change/",
+        "order": "5",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 564,
+        "title": "Nuclear Energy Stopgap",
+        "url": "/policies/nuclear-energy/",
+        "order": "13",
+        "categories": [
+            {
+                "id": "environment",
+                "title": "Environment"
+            }
+        ]
+    },
+    {
+        "id": 562,
+        "title": "Attack Dark Money in Politics",
+        "url": "/policies/overturning-citizens-united/",
+        "order": "23",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 559,
+        "title": "Modernize Voting",
+        "url": "/policies/modernize-voting/",
+        "order": "27",
+        "categories": [
+            {
+                "id": "voting-reform",
+                "title": "Voting Reform"
+            }
+        ]
+    },
+    {
+        "id": 558,
+        "title": "Improve the American Scorecard",
+        "url": "/policies/measuring-the-economy/",
+        "order": "18",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 555,
+        "title": "Human-Centered Capitalism",
+        "url": "/policies/human-capitalism/",
+        "order": "3",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 554,
+        "title": "Hold Pharmaceutical Companies Accountable",
+        "url": "/policies/holding-pharmaceutical-companies-accountable/",
+        "order": "88",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            },
+            {
+                "id": "healthcare",
+                "title": "Healthcare"
+            }
+        ]
+    },
+    {
+        "id": 552,
+        "title": "Legalize Marijuana",
+        "url": "/policies/legalization-of-marijuana/",
+        "order": "9",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 551,
+        "title": "Economic Crime",
+        "url": "/policies/economic-crime/",
+        "order": "116",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 550,
+        "title": "Reduce Mass Incarceration",
+        "url": "/policies/reduce-mass-incarceration/",
+        "order": "21",
+        "categories": [
+            {
+                "id": "criminal-justice-reform",
+                "title": "Criminal Justice Reform"
+            }
+        ]
+    },
+    {
+        "id": 548,
+        "title": "Media Fragmentation",
+        "url": "/policies/media-fragmentation/",
+        "order": "118",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 544,
+        "title": "Legal Protections for LGBTQ+ Individuals",
+        "url": "/policies/lgbtq-rights/",
+        "order": "11",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    },
+    {
+        "id": 541,
+        "title": "Making Taxes Fun",
+        "url": "/policies/making-taxes-fun/",
+        "order": "17",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 530,
+        "title": "Value-Added Tax",
+        "url": "/policies/value-added-tax/",
+        "order": "8",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 529,
+        "title": "Net Neutrality",
+        "url": "/policies/net-neutrality/",
+        "order": "45",
+        "categories": [
+            {
+                "id": "economy",
+                "title": "Economy/Jobs &amp; Labor"
+            }
+        ]
+    },
+    {
+        "id": 528,
+        "title": "Department of Technology",
+        "url": "/policies/regulating-ai-emerging-technologies/",
+        "order": "31",
+        "categories": [
+            {
+                "id": "government-reform",
+                "title": "Government Reform"
+            }
+        ]
+    },
+    {
+        "id": 525,
+        "title": "Robo-Calling Text Line",
+        "url": "/policies/robo-calling-text-line/",
+        "order": "64",
+        "categories": [
+            {
+                "id": "family-social",
+                "title": "Family/Social Cohesion"
+            }
+        ]
+    }
+]
