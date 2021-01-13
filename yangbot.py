@@ -5,19 +5,25 @@ import sys
 import os
 import requests
 import json
+import logging
 from bs4 import BeautifulSoup
 from fuzzywuzzy import process
 from markdown import format_section
 
 from common import URL_PREFIX, URL_POLICY
 
+LOGGER = logging.getLogger("yangbot")
 
-FOOTER = "^Beep ^Boop! ^I'm ^a ^bot! ^Please ^contact ^[*u/k_joel*](https://reddit.com/user/k_joel) ^with ^any ^issues ^or ^suggestions. ^[*Github*](https://github.com/k-joel/yangbot)"
+FOOTER = "^Beep ^Boop! ^I'm ^a ^bot! ^Bugs? ^Feedback? " +\
+    "^Contact ^my ^[author](https://www.reddit.com/message/compose?to=k_joel&subject=[yangbot]) " +\
+    "^or ^join ^the ^[discussion](https://www.reddit.com/user/yangpolicyinfo_bot/comments/kw56cu/discussion_thread/). " +\
+    "^The ^[source](https://github.com/k-joel/yangbot)."
 
 ACTIVE_SUBREDDITS = [
-    'YangForPresidentHQ',
-    'YangGang',
-    'yangformayorhq'
+    # 'YangForPresidentHQ',
+    # 'YangGang',
+    # 'yangformayorhq',
+    'testingground4bots'
 ]
 
 POLICY_ALIASES = {
@@ -25,15 +31,42 @@ POLICY_ALIASES = {
     'Value-Added Tax': ['vat']
 }
 
-COMMAND = 'yangbot'
+COMMAND = '!yangbot'
 MIN_PHRASE_LEN = 3
-DUMP_FILE = 'dump.json'
+
+DUMP_FILE = 'policies.json'
 TEST_FILE = 'test.md'
 LOG_FILE = 'log.txt'
+LOG_FORMAT = '[%(asctime)s] %(levelname)-8s %(message)s'
+
+
+def config_logger():
+    LOGGER.setLevel(logging.DEBUG)
+
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.DEBUG)
+    console_handler.setFormatter(logging.Formatter(LOG_FORMAT))
+
+    file_handler = logging.FileHandler(LOG_FILE)
+    file_handler.setLevel(logging.WARNING)
+    file_handler.setFormatter(logging.Formatter(LOG_FORMAT))
+
+    LOGGER.addHandler(console_handler)
+    LOGGER.addHandler(file_handler)
+
+
+def config_dev_logger():
+    LOGGER.setLevel(logging.DEBUG)
+
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.DEBUG)
+    console_handler.setFormatter(logging.Formatter(LOG_FORMAT))
+
+    LOGGER.addHandler(console_handler)
 
 
 def dump_json_to_file(json_text):
-    print('dumping json to file:', DUMP_FILE)
+    LOGGER.info('dumping json to file: ' + DUMP_FILE)
     data = json.loads(json_text)
     with open(DUMP_FILE, 'w') as json_file:
         json.dump(data, json_file, indent=4)
@@ -43,7 +76,7 @@ def dump_json_to_file(json_text):
 def load_json_from_file():
     data = None
     with open(DUMP_FILE, 'r') as json_file:
-        print('loading json from file:', DUMP_FILE)
+        LOGGER.info('loading json from file: ' + DUMP_FILE)
         data = json.load(json_file)
     return data
 
@@ -51,13 +84,13 @@ def load_json_from_file():
 def get_policies():
     data = load_json_from_file()
     if not data:
-        print('parsing url:', URL_POLICY)
+        LOGGER.info(
+            'no json cache found, grabbing policy data from: ' + URL_POLICY)
         response = requests.get(URL_POLICY)
         soup = BeautifulSoup(response.content, 'lxml')
         policies_section = soup.find_all(
             'section', class_='policy-list-section')[0]
         policies_text = policies_section['data-policies']
-        print('done!')
         data = dump_json_to_file(policies_text)
     return data
 
@@ -68,7 +101,7 @@ def dump_text_to_file(text):
 
 
 def extract_data(url, title):
-    print('scraping policy:', url)
+    LOGGER.info('scraping policy from: ' + url)
     full_url = URL_PREFIX + url
     response = requests.get(full_url)
     soup = BeautifulSoup(response.content, 'lxml')
@@ -103,71 +136,89 @@ def extract_data(url, title):
 def resolve_aliases(phrase):
     for key, aliases in POLICY_ALIASES.items():
         if process.extractOne(phrase, aliases, score_cutoff=97):
+            LOGGER.info('resolved alias \'{}\' to \'{}\''.format(phrase, key))
             return key
     return phrase
 
 
-def match_and_extract_data(phrase):
-    if len(phrase) < MIN_PHRASE_LEN:
-        print('phrase too short')
-        return None
-
-    phrase = resolve_aliases(phrase)
-    print('parsing phrase:', phrase)
-
+def extract_titles():
     policies = get_policies()
     titles = {policy['title']: policy['url'] for policy in policies}
-
-    match = process.extractOne(phrase, titles, score_cutoff=90)
-    if not match:
-        print('no match found')
-        return None
-
-    text = extract_data(match[0], match[2])
-    return text
-
-
-def append_log(text):
-    with open(LOG_FILE, 'w+') as file:
-        file.write(text)
+    return titles
 
 
 def dev_main(phrase):
-    text = match_and_extract_data(phrase)
+    config_dev_logger()
+
+    titles = extract_titles()
+    phrase = resolve_aliases(phrase)
+
+    match = process.extractOne(phrase, titles, score_cutoff=90)
+    if not match:
+        LOGGER.error('no match found')
+        return
+
+    text = extract_data(match[0], match[2])
     if text:
         print(text)
         # dump_text_to_file(text)
 
 
 def main():
+    config_logger()
+
+    LOGGER.info('--- yangbot started ---')
+
+    titles = extract_titles()
+
     # init using praw.ini
     reddit = praw.Reddit("yangbot", config_interpolation="basic")
 
     bot_profile = reddit.redditor('yangpolicyinfo_bot')
-    bot_subreddit = reddit.subreddit(bot_profile.subreddit['display_name'])
+    subreddit_string = bot_profile.subreddit['display_name'] +\
+        '+' + '+'.join(ACTIVE_SUBREDDITS)
 
-    for comment in bot_subreddit.stream.comments(pause_after=10, skip_existing=True):
+    subreddits = reddit.subreddit(subreddit_string)
+
+    for comment in subreddits.stream.comments(pause_after=10, skip_existing=True):
         if comment == None or comment.author == reddit.user.me():
             continue
 
-        init_len = len(COMMAND) + 2
+        init_len = len(COMMAND) + 1
 
         if len(comment.body) < init_len or\
-                comment.body[:init_len].lower() != '!' + COMMAND + ' ':
+                comment.body[:init_len].lower() != COMMAND + ' ':
             continue
 
         phrase = comment.body.splitlines()[0][init_len:].lower()
 
-        try:
-            text = match_and_extract_data(phrase)
-            if not text:
-                continue
+        LOGGER.warning(
+            'querying phrase \'{}\' by user \'{}\' from subreddit \'{}\''.format(
+                phrase, str(comment.author), str(comment.subreddit)))
 
-            comment.reply(text)
-        except:
-            append_log('error scraping phrase: ' + phrase)
+        if len(phrase) < MIN_PHRASE_LEN:
+            LOGGER.error('phrase too short')
+            continue
+
+        phrase = resolve_aliases(phrase)
+
+        match = process.extractOne(phrase, titles, score_cutoff=90)
+        if not match:
+            LOGGER.error('no match found')
+            continue
+
+        try:
+            text = extract_data(match[0], match[2])
+            if text:
+                botreply = comment.reply(text)
+                if botreply:
+                    LOGGER.info('success! permalink: reddit.com' +
+                                str(botreply.permalink))
+
+        except Exception as e:
+            LOGGER.critical('!!exception raised!!\n' + str(e))
 
 
 if __name__ == "__main__":
-    # dev_main('ubi')
-    main()
+    dev_main('nuclear energy')
+    # main()
