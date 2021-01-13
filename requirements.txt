@@ -1,4 +1,7 @@
 praw
+lxml
 requests
 bs4
 fuzzywuzzy
+python-Levenshtein
+unidecode
