@@ -2,18 +2,20 @@
 
 import praw
 import sys
-import os
-import json
 import logging
 from fuzzywuzzy import process
-from build_policies import get_policies
 
-URL_PREFIX = 'https://www.yang2020.com'
+import policies_yang2020
+import policies_yangforny
 
-FOOTER = "^Beep ^Boop! ^I'm ^a ^bot! ^Bugs? ^Feedback? " +\
-    "^Contact ^my ^[author](https://www.reddit.com/message/compose?to=k_joel&subject=[yangbot]) " +\
-    "^or ^join ^the ^[discussion](https://www.reddit.com/user/yangpolicyinfo_bot/comments/kw56cu/discussion_thread/). " +\
+FOOTER = "^Beep ^Boop! ^I'm ^a ^bot! ^Bugs? ^Feedback? "\
+    "^Contact ^my ^[author](https://www.reddit.com/message/compose?to=k_joel&subject=[yangbot]) "\
+    "^or ^join ^the ^[discussion](https://www.reddit.com/user/yangpolicyinfo_bot/comments/kw56cu/discussion_thread/). "\
     "^The ^[source](https://github.com/k-joel/yangbot)."
+
+MATCH_ERROR = "Sorry! No match found for query \'%s\'.\n\n"\
+    "If you think this is an error or you wish to add this to the keyphrase list,"\
+    " please comment [here](https://www.reddit.com/user/yangpolicyinfo_bot/comments/kw56cu/discussion_thread/)"
 
 ACTIVE_SUBREDDITS = [
     'YangForPresidentHQ',
@@ -22,12 +24,9 @@ ACTIVE_SUBREDDITS = [
     'testingground4bots'
 ]
 
-POLICY_ALIASES = {
-    'The Freedom Dividend': ['ubi', 'basic income', 'universal basic income'],
-    'Value-Added Tax': ['vat']
-}
 
 COMMAND = '!yangbot'
+COMMAND2020 = '!yangbot-2020'
 MIN_PHRASE_LEN = 3
 
 TEST_FILE = 'test.md'
@@ -67,20 +66,20 @@ def dump_text_to_file(text):
         file.write(text)
 
 
-def resolve_aliases(phrase):
-    for key, aliases in POLICY_ALIASES.items():
+def resolve_keywords(phrase, keywords):
+    for key, aliases in keywords.items():
         if process.extractOne(phrase, aliases, score_cutoff=97):
-            LOGGER.info('resolved alias \'{}\' to \'{}\''.format(phrase, key))
+            LOGGER.info('resolved keyword \'%s\' to \'%s\'' % (phrase, key))
             return key
     return phrase
 
 
-def find_and_build_policy(policies, phrase):
+def match_policy(policies, phrase, keywords):
     if len(phrase) < MIN_PHRASE_LEN:
-        LOGGER.error('phrase too short')
-        return
+        LOGGER.error('Phrase too short')
+        return None
 
-    phrase = resolve_aliases(phrase)
+    phrase = resolve_keywords(phrase, keywords)
 
     def get_title(d):
         return d['title'] if isinstance(d, dict) else d
@@ -88,22 +87,22 @@ def find_and_build_policy(policies, phrase):
     match = process.extractOne(
         phrase, policies, processor=get_title, score_cutoff=90)
     if not match:
-        LOGGER.error('no match found')
-        return
+        LOGGER.error('No match found')
+        return None
 
-    title = match[0]['title']
-    sections = match[0]['sections']
+    return match[0]
 
-    full_text = '## ' + title + '\n\n------\n\n'
 
-    for text in sections.values():
+def build_policy(policy):
+    full_text = '# ' + policy['title'] + '\n\n'
+
+    for text in policy['sections']:
         full_text += text
         full_text += '\n\n'
 
-    full_text += '[**More info...**](' + URL_PREFIX + match[0]['url'] + ')\n\n'
+    full_text += '[**More info...**](' + policy['url'] + ')'
 
-    # Footer
-    full_text += '------\n\n' + FOOTER
+    full_text += '\n\n------\n\n' + FOOTER
 
     return full_text
 
@@ -111,22 +110,30 @@ def find_and_build_policy(policies, phrase):
 def dev_main(phrase):
     config_dev_logger()
 
-    policies = get_policies()
+    policies = policies_yangforny.get_policies()
     if policies:
-        policy = find_and_build_policy(policies, phrase)
+        policy = match_policy(
+            policies, phrase, policies_yangforny.POLICY_KEYWORDS)
         if policy:
-            print(policy)
-            # dump_text_to_file(policy)
+            text = build_policy(policy)
+            print(text)
+            # dump_text_to_file(text)
 
 
 def main():
     config_logger()
 
-    LOGGER.info('--- yangbot started ---')
+    LOGGER.info('--- Yangbot started ---')
 
-    policies = get_policies()
-    if not policies:
+    policies_new = policies_yangforny.get_policies()
+    policies_old = policies_yang2020.get_policies()
+    if not policies_new or not policies_old:
         return
+
+    lookup = {
+        COMMAND: (policies_new, policies_yangforny.POLICY_KEYWORDS),
+        COMMAND2020: (policies_old, policies_yang2020.POLICY_KEYWORDS)
+    }
 
     # init using praw.ini
     reddit = praw.Reddit("yangbot", config_interpolation="basic")
@@ -141,30 +148,41 @@ def main():
         if comment == None or comment.author == reddit.user.me():
             continue
 
-        init_len = len(COMMAND) + 1
-
-        if len(comment.body) < init_len or\
-                comment.body[:init_len].lower() != COMMAND + ' ':
+        if len(comment.body) < len(COMMAND) + 1 or\
+                comment.body[0] != '!':
             continue
 
-        phrase = comment.body.splitlines()[0][init_len:].lower()
+        command, text = comment.body.split(' ', 1)
+
+        if command not in lookup:
+            continue
+
+        phrase = text.splitlines()[0].strip().lower()
 
         LOGGER.warning(
-            'querying phrase \'{}\' by \'u/{}\' from \'r/{}\''.format(
-                phrase, str(comment.author), str(comment.subreddit)))
+            'Querying \'%s %s\' by \'u/%s\' from \'r/%s\'' % (
+                command, phrase, str(comment.author), str(comment.subreddit)))
 
         try:
-            policy = find_and_build_policy(policies, phrase)
+            policies, keywords = lookup[command]
+            policy = match_policy(policies, phrase, keywords)
+
             if policy:
-                botreply = comment.reply(policy)
+                text = build_policy(policy)
+                botreply = comment.reply(text)
                 if botreply:
-                    LOGGER.info('success! reddit.com' +
+                    LOGGER.info('Success! reply: reddit.com' +
+                                str(botreply.permalink))
+            else:
+                botreply = comment.reply(MATCH_ERROR % phrase)
+                if botreply:
+                    LOGGER.info('Match failed! reply: reddit.com' +
                                 str(botreply.permalink))
 
         except Exception as e:
-            LOGGER.critical('!!exception raised!!\n' + str(e))
+            LOGGER.critical('!!Exception raised!!\n' + str(e))
 
 
 if __name__ == "__main__":
-    dev_main('nuclear energy')
-    # main()
+    # dev_main('basic income')
+    main()
