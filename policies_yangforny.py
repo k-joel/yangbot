@@ -13,11 +13,13 @@ URL_PREFIX = 'https://www.yangforny.com'
 URL_POLICY = 'https://www.yangforny.com/policies/'
 
 POLICY_KEYWORDS = {
-    'A Basic Income for NYC': [
+    'A Basic Income for New York City': [
         'ubi', 'universal basic income', 'minimum income', 'guaranteed income', 'freedom dividend'],
 }
 
 POLICIES_FILE = 'policies_yangforny.json'
+
+POLICIES = None
 
 LOGGER = logging.getLogger()
 
@@ -70,7 +72,7 @@ def scrape_policy(title, url, categories):
     return jsmap
 
 
-def get_policies():
+def load_policies():
     try:
         with open(POLICIES_FILE, 'r') as json_file:
             LOGGER.info('Loading policies from file: ' + POLICIES_FILE)
@@ -101,9 +103,18 @@ def get_policies():
         return None
 
 
+def get_policies_and_keywords():
+    global POLICIES
+    if not POLICIES:
+        POLICIES = load_policies()
+        if not POLICIES:
+            return None
+    return (POLICIES, POLICY_KEYWORDS)
+
+
 if __name__ == "__main__":
     logging.basicConfig()
-    policies = get_policies()
+    policies = load_policies()
 
     full_text = ''
     for policy in policies:

@@ -28,6 +28,8 @@ FILTERED_TAGS = {'class': 'check'}
 
 POLICIES_FILE = 'policies_yang2020.json'
 
+POLICIES = None
+
 LOGGER = logging.getLogger()
 
 
@@ -62,7 +64,7 @@ def scrape_policy(title, url, categories):
     return jsmap
 
 
-def get_policies():
+def load_policies():
     try:
         with open(POLICIES_FILE, 'r') as json_file:
             LOGGER.info('Loading policies from file: ' + POLICIES_FILE)
@@ -93,9 +95,18 @@ def get_policies():
         return None
 
 
+def get_policies_and_keywords():
+    global POLICIES
+    if not POLICIES:
+        POLICIES = load_policies()
+        if not POLICIES:
+            return None
+    return (POLICIES, POLICY_KEYWORDS)
+
+
 if __name__ == "__main__":
     logging.basicConfig()
-    policies = get_policies()
+    policies = load_policies()
 
     full_text = ''
     for policy in policies:
