@@ -1,6 +1,7 @@
+# author: github.com/k-joel
 
 import html
-from bs4 import BeautifulSoup, NavigableString, Tag
+from bs4 import NavigableString, Tag
 from unidecode import unidecode
 
 TAG_BOLD = ['b', 'strong']
@@ -104,10 +105,10 @@ class MarkdownConverter:
             return '\n\n------\n\n'
 
         if is_tag(tag, TAG_LIST):
-            old_indent = self.indent
+            prev_indent = self.indent
             self.indent = self.indent_level * 4
             text = self.format_tag_contents(tag)
-            self.indent = old_indent
+            self.indent = prev_indent
             if text == '':
                 return ''
             return self.add_line2(index) + text
