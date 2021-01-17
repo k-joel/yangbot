@@ -1,8 +1,10 @@
 # author: github.com/k-joel
 
 import praw
+import prawcore
 import sys
 import logging
+import time
 from fuzzywuzzy import process
 from unidecode import unidecode
 
@@ -24,21 +26,26 @@ FOOTER = "^Beep ^Boop! ^I'm ^a ^bot! ^Bugs? ^Feedback? "\
 SHORT_ERROR = "Sorry, I was unable to process your query. The query length should be atleast 3 characters or more. Please try again."
 
 MATCH_ERROR = "Sorry, I couldn't find a match for your query \'%s\'.\n\n"\
-    "If you think this is an error or you wish to add this phrase to the related keyphrase list,"\
+    "If you think this is an error or you wish to add this phrase to the related keyword list,"\
     " please comment [here](https://www.reddit.com/user/yangpolicyinfo_bot/comments/kw56cu/discussion_thread/)"
 
 COMMAND = '!yangbot'
 COMMAND2020 = '!yangbot-2020'
-MIN_PHRASE_LEN = 3
+MIN_PHRASE_LEN = 2
 
 TEST_FILE = 'test.md'
 LOG_FILE = 'log.txt'
 LOG_FORMAT = '[%(asctime)s] %(levelname)-8s %(message)s'
 
-LOGGER = logging.getLogger()
+LOGGER = None
 
 
 def config_logger():
+    global LOGGER
+    if LOGGER:
+        return
+
+    LOGGER = logging.getLogger()
     LOGGER.setLevel(logging.INFO)
 
     console_handler = logging.StreamHandler(sys.stdout)
@@ -54,6 +61,11 @@ def config_logger():
 
 
 def config_dev_logger():
+    global LOGGER
+    if LOGGER:
+        return
+
+    LOGGER = logging.getLogger()
     LOGGER.setLevel(logging.INFO)
 
     console_handler = logging.StreamHandler(sys.stdout)
@@ -191,6 +203,17 @@ def main():
             LOGGER.critical('!!Exception raised!!\n' + str(e))
 
 
+def main_rs():
+    while True:
+        try:
+            main()
+        except prawcore.exceptions.ServerError:
+            LOGGER.critical('!!503 Error!! Restarting in 10 seconds...')
+            time.sleep(10)
+        except:
+            break
+
+
 if __name__ == "__main__":
-    # dev_main('ubi')
-    main()
+    # dev_main('Small Business')
+    main_rs()
