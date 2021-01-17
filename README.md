@@ -2,7 +2,7 @@
 This is a reddit bot that retrieves policy information from the website of NYC mayoral candidate and former 2020 presidential candidate Andrew Yang.
 
 ## Usage
- - `!yangbot <policy>`
+ - `!yangbot <phrase>`
  - `!yangbot-2020 <phrase>`
 
 ## Setup
