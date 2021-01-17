@@ -12,13 +12,18 @@ from markdown import MarkdownConverter
 URL_PREFIX = 'https://www.yangforny.com'
 URL_POLICY = 'https://www.yangforny.com/policies/'
 
+CHARACTER_LIMIT = 10000
+
+FILTERED_LINKS = ['https://www.yangforny.com#fn']
+
 POLICY_KEYWORDS = {
     'Cash Relief & COVID Recovery':
         ['coronavirus', 'covid 19', 'vaccine', 'pandemic'],
     'A Safe and Fair City':
         ['nypd', 'police', 'cops', 'crime', 'commissioner', 'justice'],
     'An Affordable City':
-        ['nycha', 'housing', 'home', 'building', 'community land trusts', 'clt'],
+        ['nycha', 'housing', 'home', 'building', 'landlord',
+            'community land trusts', 'clt'],
     'A Human Centered Economy':
         ['economy', 'business', 'commerce', 'finance'],
     'A Healthy New York':
@@ -90,7 +95,7 @@ def get_policies_metadata():
 def scrape_policy(title, url, categories):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
-    conv = MarkdownConverter(URL_PREFIX)
+    conv = MarkdownConverter(URL_PREFIX, FILTERED_LINKS)
 
     contents = soup.find('section', class_='wrapper').contents[1:]
 
@@ -150,6 +155,7 @@ def get_policies_and_keywords():
 
 
 if __name__ == "__main__":
+    '''
     logging.basicConfig()
     policies = load_policies()
 
@@ -163,3 +169,13 @@ if __name__ == "__main__":
 
     with open('dump_yangforny.md', 'w') as file:
         file.write(full_text)
+    '''
+
+    policy = scrape_policy(
+        'title', 'https://www.yangforny.com/policies/reopening-stronger-schools', 'category')
+    full_text = '# ' + policy['title'] + '\n\n'
+    for text in policy['sections']:
+        full_text += text
+        full_text += '\n\n'
+
+    print(full_text)

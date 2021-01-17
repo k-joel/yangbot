@@ -46,7 +46,7 @@ def get_policies_metadata():
 def scrape_policy(title, url, categories):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
-    conv = MarkdownConverter(URL_PREFIX, FILTERED_TAGS)
+    conv = MarkdownConverter(URL_PREFIX, [], FILTERED_TAGS)
 
     sections = []
     for cls_ in SECTIONS:

@@ -48,14 +48,17 @@ class MarkdownConverter:
 
     url_prefix: Prefix this url to any relative links
 
+    link_filter: Filters all links that start with these prefixes. Takes a list()
+
     tag_filter: dict() that allows you to filter tags based on attributes.\
                 Can accept the value of the key,value pair as string or list of strings
                 e.g. { 'class': ['ignore', 'this'] }
     '''
 
-    def __init__(self, url_prefix='', tag_filter={}):
+    def __init__(self, url_prefix='', link_filter=[], tag_filter={}):
         self.url_prefix = url_prefix
         self.tag_filter = tag_filter
+        self.link_filter = link_filter
         self.indent_level = 0
         self.indent = 0
 
@@ -79,11 +82,14 @@ class MarkdownConverter:
                     return True
         return False
 
+    def can_filter_link(self, link):
+        return any(link.startswith(prefix) for prefix in self.link_filter)
+
     def format_link(self, link):
-        ln = link.strip().replace(' ', '%20')
-        if len(ln) < 4 or ln[:4] != 'http':
-            return self.url_prefix + ln
-        return ln
+        link = link.strip().replace(' ', '%20')
+        if len(link) < 4 or link[:4] != 'http':
+            return self.url_prefix + link
+        return link
 
     def format_tag_contents(self, tag):
         s, i = '', 0
@@ -102,7 +108,7 @@ class MarkdownConverter:
             return '\n\n'
 
         if is_tag(tag, TAG_LINE):
-            return '\n\n------\n\n'
+            return '\n\n------'
 
         if is_tag(tag, TAG_LIST):
             prev_indent = self.indent
@@ -145,8 +151,10 @@ class MarkdownConverter:
             return '> ' + text
 
         if is_tag(tag, TAG_LINK):
-            return '[' + text + '](' +\
-                self.format_link(tag['href']) + ')'
+            link = self.format_link(tag['href'])
+            if self.can_filter_link(link):
+                return '[' + text + ']'
+            return '[' + text + '](' + link + ')'
 
         if is_tag(tag, TAG_PARAGRAPH):
             sep = '\n' + self.add_indent()
