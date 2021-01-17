@@ -12,8 +12,6 @@ from markdown import MarkdownConverter
 URL_PREFIX = 'https://www.yangforny.com'
 URL_POLICY = 'https://www.yangforny.com/policies/'
 
-CHARACTER_LIMIT = 10000
-
 FILTERED_LINKS = ['https://www.yangforny.com#fn']
 
 POLICY_KEYWORDS = {
@@ -155,7 +153,6 @@ def get_policies_and_keywords():
 
 
 if __name__ == "__main__":
-    '''
     logging.basicConfig()
     policies = load_policies()
 
@@ -169,8 +166,8 @@ if __name__ == "__main__":
 
     with open('dump_yangforny.md', 'w') as file:
         file.write(full_text)
-    '''
 
+    '''
     policy = scrape_policy(
         'title', 'https://www.yangforny.com/policies/reopening-stronger-schools', 'category')
     full_text = '# ' + policy['title'] + '\n\n'
@@ -179,3 +176,4 @@ if __name__ == "__main__":
         full_text += '\n\n'
 
     print(full_text)
+    '''

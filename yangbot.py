@@ -32,6 +32,7 @@ MATCH_ERROR = "Sorry, I couldn't find a match for your query \'%s\'.\n\n"\
 COMMAND = '!yangbot'
 COMMAND2020 = '!yangbot-2020'
 MIN_PHRASE_LEN = 2
+CHARACTER_LIMIT = 9000
 
 TEST_FILE = 'test.md'
 LOG_FILE = 'log.txt'
@@ -104,17 +105,23 @@ def match_policy(phrase, policies, keywords):
 
 
 def build_policy(policy):
+    texts = []
     full_text = '# ' + policy['title'] + '\n\n'
 
+    length = 0
     for text in policy['sections']:
-        full_text += text
-        full_text += '\n\n'
+        if length + len(text) > CHARACTER_LIMIT:
+            texts.append(full_text)
+            full_text = ''
+            length = 0
+        length += len(text)
+        full_text += text + '\n\n'
 
     full_text += '[**More info...**](' + policy['url'] + ')'
-
     full_text += '\n\n------\n\n' + FOOTER
 
-    return full_text
+    texts.append(full_text)
+    return texts
 
 
 def dev_main(phrase):
@@ -131,9 +138,13 @@ def dev_main(phrase):
     if not policy:
         return
 
-    text = build_policy(policy)
-    print(text)
-    # dump_text_to_file(text)
+    texts = build_policy(policy)
+    final_text = ''
+    for i, text in enumerate(texts):
+        final_text += 'Part [%s / %s]\n\n%s' % (
+            str(i+1), str(len(texts)), text)
+    print(final_text)
+    # dump_text_to_file(final_text)
 
 
 def main():
@@ -191,10 +202,20 @@ def main():
             policy = match_policy(phrase, policies, keywords)
 
             if policy:
-                text = build_policy(policy)
-                reply = comment.reply(text)
-                LOGGER.info('Success! Reply: reddit.com' +
-                            str(reply.permalink))
+                texts = build_policy(policy)
+                if len(texts) == 1:
+                    reply = comment.reply(texts[0])
+                    LOGGER.info('Success! Reply: reddit.com' +
+                                str(reply.permalink))
+                else:
+                    LOGGER.info('Sending multipart reply...')
+                    for i, text in enumerate(texts):
+                        text_part = 'Part [%s / %s]\n\n%s' % (
+                            str(i+1), str(len(texts)), text)
+                        reply = comment.reply(text_part)
+                        LOGGER.info('Success! Reply %s: reddit.com%s' %
+                                    (str(i), str(reply.permalink)))
+
             else:
                 comment.author.message('Yangbot Error!', MATCH_ERROR % phrase)
                 LOGGER.info('Failed match!')
@@ -215,5 +236,5 @@ def main_rs():
 
 
 if __name__ == "__main__":
-    # dev_main('landlord')
+    # dev_main('shsat')
     main_rs()
