@@ -8,8 +8,8 @@ import time
 from fuzzywuzzy import process
 from unidecode import unidecode
 
-import policies_yang2020
-import policies_yangforny
+import yang2020_policies
+import yangforny_policies
 
 ACTIVE_SUBREDDITS = [
     'YangForPresidentHQ',
@@ -130,7 +130,7 @@ def dev_main(phrase):
     if len(phrase) < MIN_PHRASE_LEN:
         return
 
-    policies_pair = policies_yangforny.get_policies_and_keywords()
+    policies_pair = yangforny_policies.get_policies_and_keywords()
     if not policies_pair:
         return
 
@@ -152,8 +152,8 @@ def main():
 
     LOGGER.info('--- Yangbot started ---')
 
-    new_policies_pair = policies_yangforny.get_policies_and_keywords()
-    old_policies_pair = policies_yang2020.get_policies_and_keywords()
+    new_policies_pair = yangforny_policies.get_policies_and_keywords()
+    old_policies_pair = yang2020_policies.get_policies_and_keywords()
     if not new_policies_pair or not old_policies_pair:
         return
 

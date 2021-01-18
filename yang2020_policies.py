@@ -8,14 +8,10 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 
 from markdown import MarkdownConverter
+from yang2020_keywords import POLICY_KEYWORDS
 
 URL_PREFIX = 'https://www.yang2020.com'
 URL_POLICY = 'https://www.yang2020.com/policies/?tab=all'
-
-POLICY_KEYWORDS = {
-    'The Freedom Dividend': ['ubi', 'basic income', 'universal basic income'],
-    'Value-Added Tax': ['vat']
-}
 
 SECTIONS = [
     'policy-individual-brief',
