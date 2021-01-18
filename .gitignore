@@ -133,5 +133,6 @@ dmypy.json
 
 # yangbot
 praw.ini
-test.md
 log.txt
+test*.*
+dump*.*

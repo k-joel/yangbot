@@ -108,7 +108,7 @@ class MarkdownConverter:
             return '\n\n'
 
         if is_tag(tag, TAG_LINE):
-            return '\n\n------'
+            return self.add_line2(index) + '------'
 
         if is_tag(tag, TAG_LIST):
             prev_indent = self.indent

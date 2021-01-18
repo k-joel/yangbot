@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 
 from markdown import MarkdownConverter
-from yangforny_keywords import POLICY_KEYWORDS
+from keywords_yangforny import POLICY_KEYWORDS
 
 URL_PREFIX = 'https://www.yangforny.com'
 URL_POLICY = 'https://www.yangforny.com/policies/'
@@ -57,8 +57,9 @@ def scrape_policy(title, url, categories):
 
     sections = []
     for section in contents:
-        text = conv.format(section)
-        sections.append(text)
+        for child in section.children:
+            text = conv.format(child)
+            sections.append(text)
 
     jsmap = {
         'title': title,
@@ -111,6 +112,7 @@ def get_policies_and_keywords():
 
 
 if __name__ == "__main__":
+
     logging.basicConfig()
     policies = load_policies()
 
