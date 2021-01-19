@@ -83,7 +83,7 @@ def dump_text_to_file(text):
 
 def resolve_keywords(phrase, keywords):
     for key, aliases in keywords.items():
-        if process.extractOne(phrase, aliases, score_cutoff=95):
+        if process.extractOne(phrase, aliases, score_cutoff=85):
             LOGGER.info('Resolved keyword \'%s\' to \'%s\'' % (phrase, key))
             return key
     return phrase
@@ -97,7 +97,7 @@ def match_policy(phrase, policies, keywords):
     phrase = resolve_keywords(phrase, keywords)
 
     match = process.extractOne(
-        phrase, policies, processor=get_title, score_cutoff=85)
+        phrase, policies, processor=get_title, score_cutoff=95)
     if not match:
         return None
 
@@ -238,5 +238,5 @@ def main_rs():
 
 
 if __name__ == "__main__":
-    # dev_main('shsat')
+    # dev_main('big box ecommerce')
     main_rs()
