@@ -242,5 +242,5 @@ def main_rs():
 
 
 if __name__ == "__main__":
-    dev_main('sanctuary city')
-    # main_rs()
+    # dev_main('sanctuary city')
+    main_rs()
