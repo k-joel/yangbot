@@ -13,8 +13,6 @@ from keywords_yangforny import POLICY_KEYWORDS
 URL_PREFIX = 'https://www.yangforny.com'
 URL_POLICY = 'https://www.yangforny.com/policies/'
 
-FILTERED_LINKS = ['https://www.yangforny.com#fn']
-
 POLICIES_FILE = 'policies_yangforny.json'
 
 POLICIES = None
@@ -51,7 +49,7 @@ def get_policies_metadata():
 def scrape_policy(title, url, categories):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
-    conv = MarkdownConverter(URL_PREFIX, FILTERED_LINKS)
+    conv = MarkdownConverter(URL_PREFIX)
 
     contents = soup.find('section', class_='wrapper').contents[1:]
 

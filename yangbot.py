@@ -81,12 +81,32 @@ def dump_text_to_file(text):
         file.write(text)
 
 
+def process_keywords(keywords):
+    flattened = []
+    for key, words in keywords.items():
+        flattened += [(key, word) for word in words]
+    return flattened
+
+
+'''
 def resolve_keywords(phrase, keywords):
     for key, aliases in keywords.items():
         if process.extractOne(phrase, aliases, score_cutoff=85):
             LOGGER.info('Resolved keyword \'%s\' to \'%s\'' % (phrase, key))
             return key
     return phrase
+'''
+
+
+def resolve_keywords(phrase, processed_kws):
+    match = process.extractOne(
+        ("", phrase), processed_kws, processor=lambda x: x[1], score_cutoff=80)
+
+    if not match:
+        return phrase
+
+    LOGGER.info('Resolved keyword \'%s\' to \'%s\'' % (phrase, match[0][0]))
+    return match[0][0]
 
 
 def match_policy(phrase, policies, keywords):
@@ -130,11 +150,14 @@ def dev_main(phrase):
     if len(phrase) < MIN_PHRASE_LEN:
         return
 
-    policies_pair = policies_yangforny.get_policies_and_keywords()
-    if not policies_pair:
+    policies_kws = policies_yangforny.get_policies_and_keywords()
+    if not policies_kws:
         return
 
-    policy = match_policy(phrase, policies_pair[0], policies_pair[1])
+    policies, keywords = policies_kws
+    processed_kws = process_keywords(keywords)
+
+    policy = match_policy(phrase, policies, processed_kws)
     if not policy:
         return
 
@@ -143,9 +166,9 @@ def dev_main(phrase):
     if len(texts) == 1:
         text = texts[0]
     else:
-        for i, text in enumerate(texts):
+        for i, t in enumerate(texts):
             text += 'Part [%s / %s]\n\n%s' % (
-                str(i+1), str(len(texts)), text)
+                str(i+1), str(len(texts)), t)
 
     print(text)
     # dump_text_to_file(text)
@@ -156,14 +179,16 @@ def main():
 
     LOGGER.info('--- Yangbot started ---')
 
-    new_policies_pair = policies_yangforny.get_policies_and_keywords()
-    old_policies_pair = policies_yang2020.get_policies_and_keywords()
-    if not new_policies_pair or not old_policies_pair:
+    new_policies_kws = policies_yangforny.get_policies_and_keywords()
+    old_policies_kws = policies_yang2020.get_policies_and_keywords()
+    if not new_policies_kws or not old_policies_kws:
         return
 
     lookup = {
-        COMMAND: new_policies_pair,
-        COMMAND2020: old_policies_pair
+        COMMAND: (
+            new_policies_kws[0], process_keywords(new_policies_kws[1])),
+        COMMAND2020: (
+            old_policies_kws[0], process_keywords(old_policies_kws[1]))
     }
 
     # init using praw.ini
@@ -242,5 +267,5 @@ def main_rs():
 
 
 if __name__ == "__main__":
-    # dev_main('sanctuary city')
+    # dev_main('schools')
     main_rs()

@@ -108,8 +108,10 @@ POLICY_KEYWORDS = {
         "language",
     ],
     "A Basic Income for New York City": [
-        "universal basic income",
+        "basic income for new york city",
+        "basic income for nyc",
         "basic income",
+        "universal basic income",
         "minimum income",
         "guaranteed income",
         "ubi",
