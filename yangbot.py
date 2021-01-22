@@ -139,12 +139,16 @@ def dev_main(phrase):
         return
 
     texts = build_policy(policy)
-    final_text = ''
-    for i, text in enumerate(texts):
-        final_text += 'Part [%s / %s]\n\n%s' % (
-            str(i+1), str(len(texts)), text)
-    print(final_text)
-    # dump_text_to_file(final_text)
+    text = ''
+    if len(texts) == 1:
+        text = texts[0]
+    else:
+        for i, text in enumerate(texts):
+            text += 'Part [%s / %s]\n\n%s' % (
+                str(i+1), str(len(texts)), text)
+
+    print(text)
+    # dump_text_to_file(text)
 
 
 def main():
@@ -238,5 +242,5 @@ def main_rs():
 
 
 if __name__ == "__main__":
-    # dev_main('big box ecommerce')
-    main_rs()
+    dev_main('sanctuary city')
+    # main_rs()
