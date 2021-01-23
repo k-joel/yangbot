@@ -53,26 +53,6 @@ def config_logger():
     console_handler.setLevel(logging.INFO)
     console_handler.setFormatter(logging.Formatter(LOG_FORMAT))
 
-    file_handler = logging.FileHandler(LOG_FILE)
-    file_handler.setLevel(logging.INFO)
-    file_handler.setFormatter(logging.Formatter(LOG_FORMAT))
-
-    LOGGER.addHandler(console_handler)
-    LOGGER.addHandler(file_handler)
-
-
-def config_dev_logger():
-    global LOGGER
-    if LOGGER:
-        return
-
-    LOGGER = logging.getLogger()
-    LOGGER.setLevel(logging.INFO)
-
-    console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.setLevel(logging.INFO)
-    console_handler.setFormatter(logging.Formatter(LOG_FORMAT))
-
     LOGGER.addHandler(console_handler)
 
 
@@ -145,7 +125,7 @@ def build_policy(policy):
 
 
 def dev_main(phrase):
-    config_dev_logger()
+    config_logger()
 
     if len(phrase) < MIN_PHRASE_LEN:
         return
@@ -226,46 +206,44 @@ def main():
             'Querying \'%s %s\' by \'u/%s\' from \'r/%s\'' % (
                 command, phrase, str(comment.author), str(comment.subreddit)))
 
-        try:
-            policies, keywords = lookup[command]
-            policy = match_policy(phrase, policies, keywords)
+        policies, keywords = lookup[command]
+        policy = match_policy(phrase, policies, keywords)
 
-            if policy:
-                texts = build_policy(policy)
-                if len(texts) == 1:
-                    reply = comment.reply(texts[0])
-                    LOGGER.info('Success! Reply: reddit.com' +
-                                str(reply.permalink))
-                else:
-                    LOGGER.info('Sending multipart reply...')
-                    for i, text in enumerate(texts):
-                        text_part = 'Part [%s / %s]\n\n%s' % (
-                            str(i+1), str(len(texts)), text)
-                        reply = comment.reply(text_part)
-                        LOGGER.info('Success! Reply %s: reddit.com%s' %
-                                    (str(i), str(reply.permalink)))
-                        # slow down otherwise the comment gets removed
-                        time.sleep(5)
-
+        if policy:
+            texts = build_policy(policy)
+            if len(texts) == 1:
+                reply = comment.reply(texts[0])
+                LOGGER.info('Success! Reply: reddit.com' +
+                            str(reply.permalink))
             else:
-                comment.author.message('Yangbot Error!', MATCH_ERROR % phrase)
-                LOGGER.info('Failed match!')
+                LOGGER.info('Sending multipart reply...')
+                for i, text in enumerate(texts):
+                    text_part = 'Part [%s / %s]\n\n%s' % (
+                        str(i+1), str(len(texts)), text)
+                    reply = comment.reply(text_part)
+                    LOGGER.info('Success! Reply %s: reddit.com%s' %
+                                (str(i), str(reply.permalink)))
+                    # slow down to prevent spam
+                    time.sleep(5)
 
-        except Exception as e:
-            LOGGER.critical('!!Exception raised!!\n' + str(e))
+        else:
+            comment.author.message('Yangbot Error!', MATCH_ERROR % phrase)
+            LOGGER.info('Failed match!')
 
 
-def main_rs():
+def main_ex():
     while True:
         try:
             main()
-        except prawcore.exceptions.ServerError:
-            LOGGER.critical('!!503 Error!! Restarting in 10 seconds...')
-            time.sleep(10)
-        except:
+        except Exception as e:
+            LOGGER.critical('!!Exception raised!!\n' + str(e))
+            LOGGER.critical('Restarting in 30 seconds...')
+            time.sleep(30)
+        else:
+            LOGGER.info('--- Yangbot stopped ---')
             break
 
 
 if __name__ == "__main__":
     # dev_main('schools')
-    main_rs()
+    main_ex()
