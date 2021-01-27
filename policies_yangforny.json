@@ -3,7 +3,10 @@
         "title": "Cash Relief & COVID Recovery",
         "url": "https://www.yangforny.com/policies/cash-relief-covid-recovery",
         "categories": [
-            "COVID Recovery \u2219 Cash Relief \u2219 Economy \u2219 Public Health"
+            "COVID Recovery",
+            "Cash Relief",
+            "Economy",
+            "Public Health"
         ],
         "sections": [
             "> \"Our way of life has been devastated by the pandemic. Accelerating our city's recovery is critical. New York City has to be the fastest city to come back safely.\"",
@@ -24,7 +27,8 @@
         "title": "A Safe and Fair City",
         "url": "https://www.yangforny.com/policies/a-safe-and-fair-city",
         "categories": [
-            "Criminal Justice \u2219 Economy"
+            "Criminal Justice",
+            "Economy"
         ],
         "sections": [
             "> \"New York City should be a safe place to live, work and play for all of us. And the NYPD should be able to do their jobs without citizens and communities, particularly people of color, fearing those that are meant to serve and protect us.\"",
@@ -42,7 +46,8 @@
         "title": "An Affordable City",
         "url": "https://www.yangforny.com/policies/an-affordable-city",
         "categories": [
-            "Housing \u2219 Economy"
+            "Housing",
+            "Economy"
         ],
         "sections": [
             "To truly address the poverty and economic insecurity facing countless New Yorkers, we must begin by addressing the City's staggering housing and affordability crisis. In a city where over 400,000 tenants call public housing home, and 44% living in market-rate apartments are rent burdened, we need to take bold steps that drastically grow the city's affordable housing supply while also reinvesting in NYCHA.",
@@ -57,7 +62,8 @@
         "title": "A Human-Centered Economy",
         "url": "https://www.yangforny.com/policies/a-human-centered-economy",
         "categories": [
-            "Cash Relief \u2219 Economy"
+            "Cash Relief",
+            "Economy"
         ],
         "sections": [
             "New York City is the world's capital for business, commerce, finance, media, arts and culture.",
@@ -89,7 +95,7 @@
             "Public health experts will be central to the Yang administration. We will lead the nation in COVID-19 recovery, but also confront the issues of mental health, depression, and drug dependency in new and innovative ways.",
             "Again, we have some of the best doctors in the world, and some of the best hospitals. It's time to ensure that every New Yorker also has the best access to healthcare.",
             "*A full public health plan will be shared in the coming weeks.*",
-            "- *[Read our full Equitable Vaccine Distribution plan here.](https://www.yangforny.com/policies/effective-equitable-vaccine-distribution)*\n- *[Read our COVID-19 Mental Health Recovery plan here.](https://www.yangforny.com/policies/recovering-from-the-mental-health-impacts-of-covid-19)*",
+            "- *[Read our full Equitable Vaccine Distribution plan here.](https://www.yangforny.com/policies/effective-equitable-vaccine-distribution)*\n- *[Read our COVID-19 Mental Health Recovery plan here.](https://www.yangforny.com/policies/recovering-from-the-mental-health-impacts-of-covid-19)*\n- *[Read our Racial Equity in Healthcare Delivery plan here.](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery)*",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A//yangforny.com/policies/a-healthy-new-york)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https%3A//yangforny.com/policies/a-healthy-new-york)"
         ]
     },
@@ -108,8 +114,8 @@
             "Andrew is grateful every day for the educators who have provided a world-class education for his sons. He's excited for the opportunity to support all of New York City's teachers with resources and the freedom to innovate in the classroom, while also increasing access and equity for our children.",
             "*Plans for K-12 education, the CUNY system and higher education, and vocational training will be released in the coming weeks.*",
             "[*Read about the plan to Reopen Stronger Schools here.*](https://www.yangforny.com/policies/reopening-stronger-schools)",
-            "1 . [https://ny.chalkbeat.org/2017/12/15/21103987/in-new-study-of-school-district-effectiveness-new-york-city-falls-just-below-national-average](https://ny.chalkbeat.org/2017/12/15/21103987/in-new-study-of-school-district-effectiveness-new-york-city-falls-just-below-national-average)",
-            "2 . [http://1w3f31pzvdm485dou3dppkcq.wpengine.netdna-cdn.com/wp-content/uploads/2019/05/OneNYC-2050-Equity-and-Excellence-in-Education.pdf](http://1w3f31pzvdm485dou3dppkcq.wpengine.netdna-cdn.com/wp-content/uploads/2019/05/OneNYC-2050-Equity-and-Excellence-in-Education.pdf)",
+            "1 . [https://ny.chalkbeat.org/2017/12/15/21103987/in-new-study-of-school-district-effectiveness-new-york-city-falls-just-below-national-average](https://ny.chalkbeat.org/2017/12/15/21103987/in-new-study-of-school-district-effectiveness-new-york-city-falls-just-below-national-average)\n",
+            "2 . [http://1w3f31pzvdm485dou3dppkcq.wpengine.netdna-cdn.com/wp-content/uploads/2019/05/OneNYC-2050-Equity-and-Excellence-in-Education.pdf](http://1w3f31pzvdm485dou3dppkcq.wpengine.netdna-cdn.com/wp-content/uploads/2019/05/OneNYC-2050-Equity-and-Excellence-in-Education.pdf)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/broadband-access)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/broadband-access)"
         ]
     },
@@ -134,7 +140,8 @@
         "title": "Own Our Transportation",
         "url": "https://www.yangforny.com/policies/own-our-transportation",
         "categories": [
-            "Transportation \u2219 Economy"
+            "Transportation",
+            "Economy"
         ],
         "sections": [
             "Mass transit in New York City is the lifeblood of our economy. A recent study found cuts to the city's transportation network could cause [450,000 lost jobs](https://www.theatlantic.com/ideas/archive/2020/12/public-transit-has-come-back/617435/) in the region within two years.",
@@ -150,7 +157,8 @@
         "title": "Fact-Based Governance",
         "url": "https://www.yangforny.com/policies/fact-based-governance",
         "categories": [
-            "Budget \u2219 Economy"
+            "Budget",
+            "Economy"
         ],
         "sections": [
             "> \"It's crucial that we trust our leaders. My goal is to be the most open and transparent mayor in the history of New York City.\"",
@@ -167,7 +175,10 @@
         "title": "A Sanctuary City",
         "url": "https://www.yangforny.com/policies/a-sanctuary-city",
         "categories": [
-            "COVID Recovery \u2219 Economy \u2219 Cash Relief \u2219 Education"
+            "COVID Recovery",
+            "Economy",
+            "Cash Relief",
+            "Education"
         ],
         "sections": [
             "New York City is home to 3.1 million immigrants who make up approximately 37% of the city's population and 45% of our workforce. Now more than ever, we must continue to ensure that all New Yorkers feel safe and welcome in our City - whether they arrived to New York yesterday or if they have been here most of their lives. New York will always be a sanctuary city for all people who see the five boroughs as their home.",
@@ -184,7 +195,7 @@
             "[*Read more about Public Health here.*](https://www.yangforny.com/policies/a-healthy-new-york)",
             "## Language Access",
             "All City agencies are required to update their language access plans. But many immigrant communities who speak languages other than English find it very difficult to get services in their preferred language. A Yang administration will ensure that all City agencies and contracted providers make language access a top priority with a real-time translator provided by the NYC App to serve New Yorkers seeking services in the language that is most comfortable for them.",
-            "1 . [https://www.vera.org/downloads/publications/new-york-immigrant-family-unity-project-evaluation.pdf](https://www.vera.org/downloads/publications/new-york-immigrant-family-unity-project-evaluation.pdf)",
+            "1 . [https://www.vera.org/downloads/publications/new-york-immigrant-family-unity-project-evaluation.pdf](https://www.vera.org/downloads/publications/new-york-immigrant-family-unity-project-evaluation.pdf)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/a-sanctuary-city)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/a-sanctuary-city)"
         ]
     },
@@ -192,7 +203,8 @@
         "title": "A Basic Income for New York City",
         "url": "https://www.yangforny.com/policies/basic-income-for-new-york-city",
         "categories": [
-            "Cash Relief \u2219 Economy "
+            "Cash Relief",
+            "Economy "
         ],
         "sections": [
             "## Program Goals",
@@ -223,7 +235,8 @@
         "title": "Broadband Access",
         "url": "https://www.yangforny.com/policies/broadband-access",
         "categories": [
-            "Economy \u2219 Education "
+            "Economy",
+            "Education "
         ],
         "sections": [
             "> \"As an entrepreneur, I know how vital broadband connectivity is to survive in our modern society. I am committed to ensuring that every New Yorker who wants broadband in their home can access an affordable connection.\"",
@@ -242,10 +255,10 @@
             "We need to have an equitable buildout of 5G across the city. The FCC has issued regulations that require municipalities to charge utilities only at cost for deployment of infrastructure.^[4](https://www.yangforny.com/policies/broadband-access) We will work with the FCC and private sector to develop a plan that charges utilities citywide for installation of 5G infrastructure *averaged* at cost, but with higher prices for affluent areas and lower prices for lower-income areas so that utilities deploy uniformly across the city.",
             "------",
             "New Yorkers can do great things when given an opportunity. We need to make sure all New Yorkers are online as we emerge out of the current crisis and build toward a better future.",
-            "1 . [https://www.reuters.com/article/health-coronavirus-new-york-education/new-york-sued-over-homeless-shelters-internet-gap-for-remote-school-idUSKBN2842LY](https://www.reuters.com/article/health-coronavirus-new-york-education/new-york-sued-over-homeless-shelters-internet-gap-for-remote-school-idUSKBN2842LY)",
-            "2 . [https://www.ny1.com/nyc/all-boroughs/politics/2017/02/27/city-data-reveals-where-all-nyc-homeless-shelters-are-located](https://www.ny1.com/nyc/all-boroughs/politics/2017/02/27/city-data-reveals-where-all-nyc-homeless-shelters-are-located)",
-            "3 . [https://www.bklynlibrary.org/media/press/brooklyn-public-library-72](https://www.bklynlibrary.org/media/press/brooklyn-public-library-72)",
-            "4 . [https://www.cnet.com/news/fcc-limits-fees-for-5g-deployment/](https://www.cnet.com/news/fcc-limits-fees-for-5g-deployment/)",
+            "1 . [https://www.reuters.com/article/health-coronavirus-new-york-education/new-york-sued-over-homeless-shelters-internet-gap-for-remote-school-idUSKBN2842LY](https://www.reuters.com/article/health-coronavirus-new-york-education/new-york-sued-over-homeless-shelters-internet-gap-for-remote-school-idUSKBN2842LY)\n",
+            "2 . [https://www.ny1.com/nyc/all-boroughs/politics/2017/02/27/city-data-reveals-where-all-nyc-homeless-shelters-are-located](https://www.ny1.com/nyc/all-boroughs/politics/2017/02/27/city-data-reveals-where-all-nyc-homeless-shelters-are-located)\n",
+            "3 . [https://www.bklynlibrary.org/media/press/brooklyn-public-library-72](https://www.bklynlibrary.org/media/press/brooklyn-public-library-72)\n",
+            "4 . [https://www.cnet.com/news/fcc-limits-fees-for-5g-deployment/](https://www.cnet.com/news/fcc-limits-fees-for-5g-deployment/)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/broadband-access)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/broadband-access)"
         ]
     },
@@ -284,19 +297,19 @@
             "We must respond to the vital social justice challenges highlighted this past summer. That means at least two specialized schools in each borough and holistic admissions to specialized schools, combining students' SHSAT performance with other forms of evaluation - grades, interviews, essays, and more.",
             "------",
             "New York City has been a national leader in education since the establishment of the New York City Board of Education in 1842. Our schools count as alumni Nobel Prize recipients, Supreme Court Justices, Oscar winners, and leaders in every professional field from almost any imaginable background. It's time we reclaim pride in that heritage as we continue to push forward and show what public schools can do for their students and for the world.",
-            "1 . [https://www.npr.org/2020/10/21/925794511/were-the-risks-of-reopening-schools-exaggerated](https://www.npr.org/2020/10/21/925794511/were-the-risks-of-reopening-schools-exaggerated)",
-            "2 . [https://www.nytimes.com/2020/11/29/nyregion/schools-reopening-partially.html](https://www.nytimes.com/2020/11/29/nyregion/schools-reopening-partially.html)",
-            "3 . [https://www.theatlantic.com/ideas/archive/2020/11/ease-restrictions-schools-dont-close-them/617146/](https://www.theatlantic.com/ideas/archive/2020/11/ease-restrictions-schools-dont-close-them/617146/)",
-            "4 . [https://www.nytimes.com/2020/12/29/nyregion/coronavirus-english-language-students.html](https://www.nytimes.com/2020/12/29/nyregion/coronavirus-english-language-students.html)",
-            "5 . [https://abc7ny.com/nyc-schools-opening-staten-island-orange-zone-district-75-in/8658998/](https://abc7ny.com/nyc-schools-opening-staten-island-orange-zone-district-75-in/8658998/)",
-            "6 . [https://research.steinhardt.nyu.edu/site/research_alliance/2018/11/19/what-are-the-contours-of-nycs-special-education-landscape/](https://research.steinhardt.nyu.edu/site/research_alliance/2018/11/19/what-are-the-contours-of-nycs-special-education-landscape/)",
-            "7 . [https://ny.chalkbeat.org/2020/7/29/21347043/remote-learning-devices-distribution-nyc](https://ny.chalkbeat.org/2020/7/29/21347043/remote-learning-devices-distribution-nyc)",
-            "8 . [https://www.politico.com/states/new-york/albany/story/2020/04/07/de-blasio-slashes-funding-for-3k-recycling-and-youth-employment-in-first-round-of-cuts-1273429](https://www.politico.com/states/new-york/albany/story/2020/04/07/de-blasio-slashes-funding-for-3k-recycling-and-youth-employment-in-first-round-of-cuts-1273429)",
-            "9 . [ http://www.nyc.gov/html/sbs/nycbiz/downloads/pdf/educational/sector_guides/daycarecenters.pdf](http://www.nyc.gov/html/sbs/nycbiz/downloads/pdf/educational/sector_guides/daycarecenters.pdf)",
-            "10 . [https://www.nbcbayarea.com/news/local/sen-skinner-unveils-bill-to-expand-childcare-opportunities/3582/](https://www.nbcbayarea.com/news/local/sen-skinner-unveils-bill-to-expand-childcare-opportunities/3582/)",
-            "11 . [https://www.nydailynews.com/new-york/average-cost-daycare-nyc-tops-16k-article-1.2428709](https://www.nydailynews.com/new-york/average-cost-daycare-nyc-tops-16k-article-1.2428709)",
-            "12 . [https://datausa.io/profile/soc/childcare-workers#:~:text=Demographic%20information%20on%20Childcare%20workers,White%20(Non%2DHispanic)](https://datausa.io/profile/soc/childcare-workers#:~:text=Demographic%20information%20on%20Childcare%20workers,White%20(Non%2DHispanic))",
-            "13 . [https://nycteachingfellows.org/our-impact ](https://nycteachingfellows.org/our-impact)",
+            "1 . [https://www.npr.org/2020/10/21/925794511/were-the-risks-of-reopening-schools-exaggerated](https://www.npr.org/2020/10/21/925794511/were-the-risks-of-reopening-schools-exaggerated)\n",
+            "2 . [https://www.nytimes.com/2020/11/29/nyregion/schools-reopening-partially.html](https://www.nytimes.com/2020/11/29/nyregion/schools-reopening-partially.html)\n",
+            "3 . [https://www.theatlantic.com/ideas/archive/2020/11/ease-restrictions-schools-dont-close-them/617146/](https://www.theatlantic.com/ideas/archive/2020/11/ease-restrictions-schools-dont-close-them/617146/)\n",
+            "4 . [https://www.nytimes.com/2020/12/29/nyregion/coronavirus-english-language-students.html](https://www.nytimes.com/2020/12/29/nyregion/coronavirus-english-language-students.html)\n",
+            "5 . [https://abc7ny.com/nyc-schools-opening-staten-island-orange-zone-district-75-in/8658998/](https://abc7ny.com/nyc-schools-opening-staten-island-orange-zone-district-75-in/8658998/)\n",
+            "6 . [https://research.steinhardt.nyu.edu/site/research_alliance/2018/11/19/what-are-the-contours-of-nycs-special-education-landscape/](https://research.steinhardt.nyu.edu/site/research_alliance/2018/11/19/what-are-the-contours-of-nycs-special-education-landscape/)\n",
+            "7 . [https://ny.chalkbeat.org/2020/7/29/21347043/remote-learning-devices-distribution-nyc](https://ny.chalkbeat.org/2020/7/29/21347043/remote-learning-devices-distribution-nyc)\n",
+            "8 . [https://www.politico.com/states/new-york/albany/story/2020/04/07/de-blasio-slashes-funding-for-3k-recycling-and-youth-employment-in-first-round-of-cuts-1273429](https://www.politico.com/states/new-york/albany/story/2020/04/07/de-blasio-slashes-funding-for-3k-recycling-and-youth-employment-in-first-round-of-cuts-1273429)\n",
+            "9 . [ http://www.nyc.gov/html/sbs/nycbiz/downloads/pdf/educational/sector_guides/daycarecenters.pdf](http://www.nyc.gov/html/sbs/nycbiz/downloads/pdf/educational/sector_guides/daycarecenters.pdf)\n",
+            "10 . [https://www.nbcbayarea.com/news/local/sen-skinner-unveils-bill-to-expand-childcare-opportunities/3582/](https://www.nbcbayarea.com/news/local/sen-skinner-unveils-bill-to-expand-childcare-opportunities/3582/)\n",
+            "11 . [https://www.nydailynews.com/new-york/average-cost-daycare-nyc-tops-16k-article-1.2428709](https://www.nydailynews.com/new-york/average-cost-daycare-nyc-tops-16k-article-1.2428709)\n",
+            "12 . [https://datausa.io/profile/soc/childcare-workers#:~:text=Demographic%20information%20on%20Childcare%20workers,White%20(Non%2DHispanic)](https://datausa.io/profile/soc/childcare-workers#:~:text=Demographic%20information%20on%20Childcare%20workers,White%20(Non%2DHispanic))\n",
+            "13 . [https://nycteachingfellows.org/our-impact ](https://nycteachingfellows.org/our-impact)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/broadband-access)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/broadband-access)"
         ]
     },
@@ -304,7 +317,9 @@
         "title": "Bringing Back New York's Economy",
         "url": "https://www.yangforny.com/policies/bringing-back-new-yorks-economy",
         "categories": [
-            "COVID Recovery \u2219 Cash Relief \u2219 Economy "
+            "COVID Recovery",
+            "Cash Relief",
+            "Economy "
         ],
         "sections": [
             "> \"New York City should be the fastest city to come back from the coronavirus in the country - this is our mission.\"",
@@ -346,16 +361,16 @@
             "The Trump Tax Cuts of 2017 eliminated deductibility for state and local taxes - a clear and successful attempt to take resources away from heavily urbanized, highly diverse, Democratic-leaning states. New York already pays $27 billion more in taxes to the federal government than it receives in benefits each year. This is the most negative balance of payment with the federal government of any state.The elimination of the SALT deduction costs New York City 55,000 jobs and reduces economic activity by $20 billion each year.^[10](https://www.yangforny.com/policies/bringing-back-new-yorks-economy) New York has always paid more than our share and we've never complained - we're a prosperous economy - but we're hurting during COVID and it's time to at least return the SALT deduction to the pre-Trump status quo.",
             "------",
             "New York City has been hit hard by this pandemic. The good news is that our economy was strong before the crisis. We need to restart that machine and get it humming again so we can do all the other work needed to make New York a fairer, cleaner, and safer city for all.",
-            "1 . [https://www.bloomberg.com/opinion/articles/2020-06-08/coronavirus-america-s-economy-can-t-thrive-without-new-york-city](https://www.bloomberg.com/opinion/articles/2020-06-08/coronavirus-america-s-economy-can-t-thrive-without-new-york-city)",
-            "2 . [https://comptroller.nyc.gov/reports/new-york-city-quarterly-economic-update/](https://comptroller.nyc.gov/reports/new-york-city-quarterly-economic-update/)",
-            "3 . [https://tracktherecovery.org/](https://tracktherecovery.org/)",
-            "4 . [https://nyc.streetsblog.org/2020/06/30/the-budget-pain-mayors-fair-fares-cut-falls-heavily-on-lower-income-transit-riders/](https://nyc.streetsblog.org/2020/06/30/the-budget-pain-mayors-fair-fares-cut-falls-heavily-on-lower-income-transit-riders/)",
-            "5 . [https://www.nytimes.com/2019/10/27/nyregion/nyc-amazon-delivery.html](https://www.nytimes.com/2019/10/27/nyregion/nyc-amazon-delivery.html)",
-            "6 . [https://footwearnews.com/2020/business/retail/new-york-tax-package-deliveries-retail-1203082413/](https://footwearnews.com/2020/business/retail/new-york-tax-package-deliveries-retail-1203082413/)",
-            "7 . [https://www.valuewalk.com/2020/01/top-10-us-cities-get-most-vc-funding/](https://www.valuewalk.com/2020/01/top-10-us-cities-get-most-vc-funding/)",
-            "8 . [https://brooklyneagle.com/articles/2020/01/28/councils-public-housing-chair-calls-for-more-nycha-funding-in-state-budget/](https://brooklyneagle.com/articles/2020/01/28/councils-public-housing-chair-calls-for-more-nycha-funding-in-state-budget/)",
-            "9 . [https://www.nbcnews.com/news/us-news/free-grocery-store-opens-texas-school-district-high-number-economically-n1252540](https://www.nbcnews.com/news/us-news/free-grocery-store-opens-texas-school-district-high-number-economically-n1252540)",
-            "10 . [https://rockinst.org/issue-area/salt-economic-impact/](https://rockinst.org/issue-area/salt-economic-impact/)",
+            "1 . [https://www.bloomberg.com/opinion/articles/2020-06-08/coronavirus-america-s-economy-can-t-thrive-without-new-york-city](https://www.bloomberg.com/opinion/articles/2020-06-08/coronavirus-america-s-economy-can-t-thrive-without-new-york-city)\n",
+            "2 . [https://comptroller.nyc.gov/reports/new-york-city-quarterly-economic-update/](https://comptroller.nyc.gov/reports/new-york-city-quarterly-economic-update/)\n",
+            "3 . [https://tracktherecovery.org/](https://tracktherecovery.org/)\n",
+            "4 . [https://nyc.streetsblog.org/2020/06/30/the-budget-pain-mayors-fair-fares-cut-falls-heavily-on-lower-income-transit-riders/](https://nyc.streetsblog.org/2020/06/30/the-budget-pain-mayors-fair-fares-cut-falls-heavily-on-lower-income-transit-riders/)\n",
+            "5 . [https://www.nytimes.com/2019/10/27/nyregion/nyc-amazon-delivery.html](https://www.nytimes.com/2019/10/27/nyregion/nyc-amazon-delivery.html)\n",
+            "6 . [https://footwearnews.com/2020/business/retail/new-york-tax-package-deliveries-retail-1203082413/](https://footwearnews.com/2020/business/retail/new-york-tax-package-deliveries-retail-1203082413/)\n",
+            "7 . [https://www.valuewalk.com/2020/01/top-10-us-cities-get-most-vc-funding/](https://www.valuewalk.com/2020/01/top-10-us-cities-get-most-vc-funding/)\n",
+            "8 . [https://brooklyneagle.com/articles/2020/01/28/councils-public-housing-chair-calls-for-more-nycha-funding-in-state-budget/](https://brooklyneagle.com/articles/2020/01/28/councils-public-housing-chair-calls-for-more-nycha-funding-in-state-budget/)\n",
+            "9 . [https://www.nbcnews.com/news/us-news/free-grocery-store-opens-texas-school-district-high-number-economically-n1252540](https://www.nbcnews.com/news/us-news/free-grocery-store-opens-texas-school-district-high-number-economically-n1252540)\n",
+            "10 . [https://rockinst.org/issue-area/salt-economic-impact/](https://rockinst.org/issue-area/salt-economic-impact/)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/bringing-back-new-yorks-economy)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/bringing-back-new-yorks-economy)"
         ]
     },
@@ -363,7 +378,8 @@
         "title": "Culture, Society, and Nightlife",
         "url": "https://www.yangforny.com/policies/culture-society-and-nightlife",
         "categories": [
-            "COVID Recovery \u2219 Economy "
+            "COVID Recovery",
+            "Economy "
         ],
         "sections": [
             "> \"Nightlife is one of the things that makes New York, New York. I see it as integral to our economy and culture.\"",
@@ -395,7 +411,7 @@
             "Finally, New York City has some of the most beautiful and iconic landscapes in the world. We should turn our bridges, monuments and buildings into works of art by hosting vivid projection mapping displays. Imagine the arch in Washington Square Park, the New York Public Library, or the Flatiron Building come alive with a projection mapping display. When it's safe, we want to get New Yorkers excited again; this is one of many ways we plan to make NYC more fun and vibrant than ever before.",
             "------",
             "The current pandemic is stressful, and it's taken a toll on all of us. But it's important to remember who we are, and what we live for. Let's not forget to rebuild the parts of New York that brought tourists from around the world and enriched our own souls.",
-            "1 . [https://criminaljustice.cityofnewyork.us/individual_charts/marijuana-possession-arrests/](https://criminaljustice.cityofnewyork.us/individual_charts/marijuana-possession-arrests/)",
+            "1 . [https://criminaljustice.cityofnewyork.us/individual_charts/marijuana-possession-arrests/](https://criminaljustice.cityofnewyork.us/individual_charts/marijuana-possession-arrests/)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/culture-society-and-nightlife)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/culture-society-and-nightlife)"
         ]
     },
@@ -403,7 +419,8 @@
         "title": "Relief for Our Small Businesses",
         "url": "https://www.yangforny.com/policies/relief-for-our-small-businesses",
         "categories": [
-            "COVID Recovery \u2219 Economy "
+            "COVID Recovery",
+            "Economy "
         ],
         "sections": [
             "> \"I have run a small business in New York City myself - they are the source of most jobs and activity in every neighborhood. I will be committed to getting small businesses reopened and back on their feet. They are vital to the city on multiple levels.\"",
@@ -448,17 +465,17 @@
             "There has been a lot of confusion about which heaters to buy, and the market in general has been tight. Many restaurants also couldn't afford the unexpected expense. By buying complying heaters, or other hardware that is subject to City regulations, in bulk and providing them at cost to restaurants, NYC can help these small businesses expand their offerings. DC spent $4 million on a program like this (grants to businesses to winterize rather than bulk purchasing)^[11](https://www.yangforny.com/policies/relief-for-our-small-businesses) to great effect.",
             "------",
             "New York's small businesses have been through a lot, but we're going to need them more than ever as our city reopens. It soon will be time to shop again, to eat together again, and to celebrate our entrepreneurs who make this City run.",
-            "1 . [https://tracktherecovery.org/](https://tracktherecovery.org/)",
-            "2 . [https://wagner.nyu.edu/files/rudincenter/dynamic_pop_manhattan.pdf](https://wagner.nyu.edu/files/rudincenter/dynamic_pop_manhattan.pdf)",
-            "3 . [https://www.brooklynpaper.com/op-ed-scott-stringer-empowering-mwbes/](https://www.brooklynpaper.com/op-ed-scott-stringer-empowering-mwbes/)",
-            "4 . [https://comptroller.nyc.gov/reports/minority-and-women-owned-businesses-at-risk-impact-of-covid-19-on-new-york-city-firms/](https://comptroller.nyc.gov/reports/minority-and-women-owned-businesses-at-risk-impact-of-covid-19-on-new-york-city-firms/)",
-            "5 . [https://comptroller.nyc.gov/reports/making-the-grade/reports/making-the-grade-2020/](https://comptroller.nyc.gov/reports/making-the-grade/reports/making-the-grade-2020/)",
-            "6 . [https://www.crainsnewyork.com/op-ed/while-nonprofits-wait-get-paid-de-blasio-made-sure-his-lawyers-did](https://www.crainsnewyork.com/op-ed/while-nonprofits-wait-get-paid-de-blasio-made-sure-his-lawyers-did)",
-            "7 . [https://www.thecity.nyc/coronavirus/2020/3/16/21210436/nonprofits-ask-city-hall-to-cut-red-tape-threatening-aid](https://www.thecity.nyc/coronavirus/2020/3/16/21210436/nonprofits-ask-city-hall-to-cut-red-tape-threatening-aid)",
-            "8 . [https://www.bostonglobe.com/2020/12/24/opinion/when-money-is-running-short-print-your-own/](https://www.bostonglobe.com/2020/12/24/opinion/when-money-is-running-short-print-your-own/)",
-            "9 . [https://www.nytimes.com/2020/09/02/business/small-business-coronavirus-local.html](https://www.nytimes.com/2020/09/02/business/small-business-coronavirus-local.html)",
-            "10 . [https://www.ny1.com/nyc/all-boroughs/news/2020/08/08/the-website-that-let-s-local-brooklyn-businesses-compete-against-amazon](https://www.ny1.com/nyc/all-boroughs/news/2020/08/08/the-website-that-let-s-local-brooklyn-businesses-compete-against-amazon)",
-            "11 . [https://www.bizjournals.com/washington/news/2020/09/21/dc-patio-dining-grants.html](https://www.bizjournals.com/washington/news/2020/09/21/dc-patio-dining-grants.html)",
+            "1 . [https://tracktherecovery.org/](https://tracktherecovery.org/)\n",
+            "2 . [https://wagner.nyu.edu/files/rudincenter/dynamic_pop_manhattan.pdf](https://wagner.nyu.edu/files/rudincenter/dynamic_pop_manhattan.pdf)\n",
+            "3 . [https://www.brooklynpaper.com/op-ed-scott-stringer-empowering-mwbes/](https://www.brooklynpaper.com/op-ed-scott-stringer-empowering-mwbes/)\n",
+            "4 . [https://comptroller.nyc.gov/reports/minority-and-women-owned-businesses-at-risk-impact-of-covid-19-on-new-york-city-firms/](https://comptroller.nyc.gov/reports/minority-and-women-owned-businesses-at-risk-impact-of-covid-19-on-new-york-city-firms/)\n",
+            "5 . [https://comptroller.nyc.gov/reports/making-the-grade/reports/making-the-grade-2020/](https://comptroller.nyc.gov/reports/making-the-grade/reports/making-the-grade-2020/)\n",
+            "6 . [https://www.crainsnewyork.com/op-ed/while-nonprofits-wait-get-paid-de-blasio-made-sure-his-lawyers-did](https://www.crainsnewyork.com/op-ed/while-nonprofits-wait-get-paid-de-blasio-made-sure-his-lawyers-did)\n",
+            "7 . [https://www.thecity.nyc/coronavirus/2020/3/16/21210436/nonprofits-ask-city-hall-to-cut-red-tape-threatening-aid](https://www.thecity.nyc/coronavirus/2020/3/16/21210436/nonprofits-ask-city-hall-to-cut-red-tape-threatening-aid)\n",
+            "8 . [https://www.bostonglobe.com/2020/12/24/opinion/when-money-is-running-short-print-your-own/](https://www.bostonglobe.com/2020/12/24/opinion/when-money-is-running-short-print-your-own/)\n",
+            "9 . [https://www.nytimes.com/2020/09/02/business/small-business-coronavirus-local.html](https://www.nytimes.com/2020/09/02/business/small-business-coronavirus-local.html)\n",
+            "10 . [https://www.ny1.com/nyc/all-boroughs/news/2020/08/08/the-website-that-let-s-local-brooklyn-businesses-compete-against-amazon](https://www.ny1.com/nyc/all-boroughs/news/2020/08/08/the-website-that-let-s-local-brooklyn-businesses-compete-against-amazon)\n",
+            "11 . [https://www.bizjournals.com/washington/news/2020/09/21/dc-patio-dining-grants.html](https://www.bizjournals.com/washington/news/2020/09/21/dc-patio-dining-grants.html)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/relief-for-our-small-businesses)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/relief-for-our-small-businesses)"
         ]
     },
@@ -466,7 +483,9 @@
         "title": "Effective, Equitable Vaccine Distribution",
         "url": "https://www.yangforny.com/policies/effective-equitable-vaccine-distribution",
         "categories": [
-            "COVID Recovery \u2219 Racial Equity \u2219 Public Health "
+            "COVID Recovery",
+            "Racial Equity",
+            "Public Health "
         ],
         "sections": [
             "> \"New York City is the best city in the world. Our healthcare infrastructure and public health strategy needs to meet the urgency of this moment.\"",
@@ -495,10 +514,10 @@
             "As businesses emerge from the pandemic, New York City's ability to partner with businesses that have shuttered is one pathway to enabling businesses to open up sooner.",
             "## Learning from Our Past, Planning for the Future",
             "Within our first 100 days in office, a Yang administration will release a Public Health Playbook for New York City that gathers the best practices and learnings from the Covid crisis to prevent and respond to future pandemics and health crises.",
-            "1 . [https://www.nytimes.com/2021/01/14/nyregion/covid-vaccine-older-people-senior-citizens.html](https://www.nytimes.com/2021/01/14/nyregion/covid-vaccine-older-people-senior-citizens.html)",
-            "2 . [https://www1.nyc.gov/office-of-the-mayor/news/035-21/vaccine-all-city-offer-transportation-nyc-seniors](https://www1.nyc.gov/office-of-the-mayor/news/035-21/vaccine-all-city-offer-transportation-nyc-seniors)",
-            "3 . [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4354806/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4354806/)",
-            "4 . [https://blackdoctorsconsortium.com/](https://blackdoctorsconsortium.com/)",
+            "1 . [https://www.nytimes.com/2021/01/14/nyregion/covid-vaccine-older-people-senior-citizens.html](https://www.nytimes.com/2021/01/14/nyregion/covid-vaccine-older-people-senior-citizens.html)\n",
+            "2 . [https://www1.nyc.gov/office-of-the-mayor/news/035-21/vaccine-all-city-offer-transportation-nyc-seniors](https://www1.nyc.gov/office-of-the-mayor/news/035-21/vaccine-all-city-offer-transportation-nyc-seniors)\n",
+            "3 . [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4354806/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4354806/)\n",
+            "4 . [https://blackdoctorsconsortium.com/](https://blackdoctorsconsortium.com/)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/effective-equitable-vaccine-distribution)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/effective-equitable-vaccine-distribution)"
         ]
     },
@@ -506,7 +525,9 @@
         "title": "Recovering from the Mental Health Impacts of COVID-19",
         "url": "https://www.yangforny.com/policies/recovering-from-the-mental-health-impacts-of-covid-19",
         "categories": [
-            "COVID Recovery \u2219 Racial Equity \u2219 Public Health "
+            "COVID Recovery",
+            "Racial Equity",
+            "Public Health "
         ],
         "sections": [
             "Covid has had a devastating mental health impact on residents of New York City. Death, economic hardship, loss of experience, survivors' guilt and uncertainty are commonplace for so many New Yorkers. While [equitable access to the vaccine](https://www.yangforny.com/policies/effective-equitable-vaccine-distribution) is central to our recovery, we must take a holistic approach to our City's recovery that includes investing in mental health services, with a focus on the needs of young people and improving our City's crisis response system.",
@@ -519,13 +540,59 @@
             "[*See our full plan for a fair and safe city here.*](https://www.yangforny.com/policies/a-safe-and-fair-city)",
             "## Expanding Mental Health Support for Healthcare Providers",
             "COVID-19 has taken an enormous toll on healthcare providers. New York was at the center of the pandemic from the very beginning, and it is our responsibility to ensure that healthcare providers and hospital staff who have had to experience the brunt of the pandemic are cared for. A Yang administration will expand mental health services for all hospital staff at H+H, while advocating for federal reforms to promote mental and behavioral health among those working on the frontlines of the pandemic.^[6](https://www.yangforny.com/policies/recovering-from-the-mental-health-impacts-of-covid-19)",
-            "1 . [https://ny.chalkbeat.org/2020/12/21/22194091/nyc-expand-community-schools-more-social-workers-covid-19](https://ny.chalkbeat.org/2020/12/21/22194091/nyc-expand-community-schools-more-social-workers-covid-19)",
-            "2 . [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759331/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759331/)",
-            "3 . [https://www.usatoday.com/story/opinion/policing/2020/12/02/cops-shouldnt-first-mental-health-call-ny-program-needed-nationwide-column/6422931002/](https://www.usatoday.com/story/opinion/policing/2020/12/02/cops-shouldnt-first-mental-health-call-ny-program-needed-nationwide-column/6422931002/)",
-            "4 . [https://thrivenyc.cityofnewyork.us/program/co-response-teams](https://thrivenyc.cityofnewyork.us/program/co-response-teams)",
-            "5 . [https://www1.nyc.gov/office-of-the-mayor/news/773-20/new-york-city-new-mental-health-teams-respond-mental-health-crises](https://www1.nyc.gov/office-of-the-mayor/news/773-20/new-york-city-new-mental-health-teams-respond-mental-health-crises)",
-            "6 . [https://drlornabreen.org/about-the-legislation/](https://drlornabreen.org/about-the-legislation/)",
+            "1 . [https://ny.chalkbeat.org/2020/12/21/22194091/nyc-expand-community-schools-more-social-workers-covid-19](https://ny.chalkbeat.org/2020/12/21/22194091/nyc-expand-community-schools-more-social-workers-covid-19)\n",
+            "2 . [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759331/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759331/)\n",
+            "3 . [https://www.usatoday.com/story/opinion/policing/2020/12/02/cops-shouldnt-first-mental-health-call-ny-program-needed-nationwide-column/6422931002/](https://www.usatoday.com/story/opinion/policing/2020/12/02/cops-shouldnt-first-mental-health-call-ny-program-needed-nationwide-column/6422931002/)\n",
+            "4 . [https://thrivenyc.cityofnewyork.us/program/co-response-teams](https://thrivenyc.cityofnewyork.us/program/co-response-teams)\n",
+            "5 . [https://www1.nyc.gov/office-of-the-mayor/news/773-20/new-york-city-new-mental-health-teams-respond-mental-health-crises](https://www1.nyc.gov/office-of-the-mayor/news/773-20/new-york-city-new-mental-health-teams-respond-mental-health-crises)\n",
+            "6 . [https://drlornabreen.org/about-the-legislation/](https://drlornabreen.org/about-the-legislation/)\n",
             "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/recovering-from-the-mental-health-impacts-of-covid-19)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/recovering-from-the-mental-health-impacts-of-covid-19)"
+        ]
+    },
+    {
+        "title": "Racial Equity in Healthcare Delivery",
+        "url": "https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery",
+        "categories": [
+            "COVID Recovery",
+            "Racial Equity",
+            "Public Health "
+        ],
+        "sections": [
+            "Well before COVID-19 hit, race-based health disparities in New York City were stark. Black women in New York are eight times more likely to die of pregnancy-related complications than white women, much higher than the national average.^[1](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery) East New York and the South Bronx, two neighborhoods that are predominantly Black and Latinx, have among the highest rates of asthma in the City.^[2](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery) These gross health disparities are the result of systemic injustices and the failure of our public health systems. On top of already-existing disparities in our City, the pandemic has taken a monstrous toll on communities of color in New York City, exposing the fragility of public health interventions to actually reduce disparities in health outcomes.^[3](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery)",
+            "The reality is that solutions to end racial disparities in our healthcare system actually start outside the healthcare system itself. Ensuring all New Yorkers have safe housing, access to transit, healthy food in their neighborhoods, and are empowered with information to make decisions that are best for them and their families, are key to reducing racial inequities. At the same time, the system must also shift to meet critical needs. Our administration will build on the progress that many providers, New York City Health and Hospitals (H+H) and the New York City Department of Health and Mental Hygiene (DOHMH) have already made to center healthcare delivery around racial equity.^[4](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery)",
+            "## Amend the New York City Charter to Make Ending Racial Health Disparities the Mandate of DOHMH",
+            "A Yang administration will amend the New York City Charter to ensure that ending racial health disparities is among the primary mandates of DOHMH. The leaders that Yang appoints to DOHMH and other relevant city agencies will represent the diversity of New York City and make ending racial health disparities a top priority.",
+            "## Build a Diverse, Culturally Competent Public Health Workforce",
+            "There is abundant evidence that shows that when communities of color are served by providers who they identify with, outcomes are better.^[5](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery) A Yang administration will create a pipeline program for prospective healthcare providers of color to serve communities of color across the five boroughs. With the City University of New York (CUNY) and Health and Hospitals (H+H), we will expand fast-track pipelines into healthcare careers for New York City high school graduates, particularly those of color, who are eager to serve diverse communities in New York City, if they commit to serve New Yorkers upon graduation.",
+            "## Ensure Fair Staffing Ratios",
+            "We must guarantee that healthcare workers are not overburdened, particularly those who serve communities of color. With our partners in the labor movement, we will ensure that the City is a leader on safe staffing ratios across the healthcare system.",
+            "## Expand Access to Healthcare at Trusted Providers",
+            "Now more than ever, safety net providers like Callen Lorde Community Health Clinic and Planned Parenthood of Greater New York, and that provide trusted services to New Yorkers in need could not be more essential as part of our City's healthcare continuum. We will expand support for all safety net providers that specialize in healthcare services for LGBTQ+ folks, immigrant communities, young people, people seeking reproductive healthcare and providers trusted by immigrant communities, and ensure that deceptive establishments that prey on women of color like \"Crisis Pregnancy Centers\" are out of business once for all.",
+            "## Require Racial Equity Competency for All Healthcare Providers in New York City",
+            "Building on the tremendous work of the Center for Health Equity under former New York City DOHMH Commissioner Dr. Mary Bassett, a Yang administration will require racial equity competency as part of teaching and learning at all H+H hospitals, available to providers citywide in partnership with DOHMH, and a requirement for nonprofit organizations seeking City funding to deliver healthcare services.^[6](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery)",
+            "## Expand Neighborhood Action Centers",
+            "Over the last several years, DOHMH has taken a place-based approach to centering racial equity in healthcare delivery. Central to this shift has been the creation of Neighborhood Action Centers in Brownsville, East Harlem, and Tremont, neighborhood-based one-stop shops that bring together health care providers, New York City agencies, and community-based organizations and programs under one roof.^[7](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery) In light of the pandemic, we must expand Neighborhood Action Centers to those communities across New York City that bore the brunt of the pandemic.",
+            "## Focus on Improving Black Maternal Mortality and Morbidity by Expanding Doula Care",
+            "Doulas are critical in ensuring that all birthing parents, and especially Black birthing parents, can advocate for their needs during the birth process. The City has made important strides in centering this issue, but this work is far from complete.^[8](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery) A Yang administration will expand New York State's doula pilot program by providing direct support to all parents who seek doula care with one-time grants to pay for this critical healthcare service, and with DOHMH, create a pipeline for more people of color to become birth workers and doulas. At the same time, we will continue to advocate for all private insurance and Medicaid to cover doula care for all patients.",
+            "## Expand NYC Care",
+            "While we advocate for healthcare for all at the state and federal level, we must take steps in New York City to expand healthcare access using the tools at our disposal. In 2019, the City launched NYC Care, which allowed uninsured New Yorkers to visit one of H+H's hospitals or clinics and see a primary care physician. Now expanded citywide, NYC Care is one step towards expanding access to primary and preventative healthcare. However, as a report by New York City's Independent Budget Office (IBO) noted, NYC Care is limited in its ability to impact the most vulnerable parts of the City - namely those that have the highest rates of uninsured residents, but are not near any public hospital facilities.^[9](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery) We will expand NYC Care to New York City healthcare providers beyond H+H, and engage in an aggressive outreach campaign with advocacy organizations to connect people without healthcare insurance to this program.",
+            "[*Read our full Sanctuary City policy here.*](https://www.yangforny.com/policies/a-sanctuary-city)",
+            "## Treat Gun Violence Like the Public Health Crisis it Is",
+            "Research demonstrates that gun violence is best understood and treated as a public health challenge. Communities of color have had to bear the brunt of the rise in gun violence since the pandemic, and our approach to solving gun violence must have a racial equity lens.^[10](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery) Cure Violence and other gun violence intervention programs are among our most important tools to curb gun violence. The Cure Violence program recruits and supports trusted, credible community messengers to interrupt violence before it begins, and mediate conflict when it arises. A Yang administration will scale up Cure Violence so that every neighborhood with significant gun violence is covered.",
+            "When an incidence of gun violence occurs - be it between community members, at the hands of police, or in a domestic dispute - communities also need to be supported through the trauma that results. The Yang Administration will invest in coordinated responses by community based organizations, mental health providers and hospitals to violence and support restorative justice practitioners, following the innovative strategies of organizations like Common Justice.^[11](https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery)",
+            "[*Read our full plan for a safe and fair city here.*](https://www.yangforny.com/policies/a-safe-and-fair-city)",
+            "1 . [https://www1.nyc.gov/office-of-the-mayor/news/365-18/de-blasio-administration-launches-comprehensive-plan-reduce-maternal-deaths-life-threatening](https://www1.nyc.gov/office-of-the-mayor/news/365-18/de-blasio-administration-launches-comprehensive-plan-reduce-maternal-deaths-life-threatening)\n",
+            "2 . [https://wherewelive.cityofnewyork.us/explore-data/access-to-opportunity/health/](https://wherewelive.cityofnewyork.us/explore-data/access-to-opportunity/health/)\n",
+            "3 . [https://www.nytimes.com/interactive/2020/07/05/us/coronavirus-latinos-african-americans-cdc-data.html](https://www.nytimes.com/interactive/2020/07/05/us/coronavirus-latinos-african-americans-cdc-data.html)\n",
+            "4 . [https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00150](https://www.healthaffairs.org/doi/10.1377/hlthaff.2019.00150)\n",
+            "5 . [https://hbr.org/2018/08/research-having-a-black-doctor-led-black-men-to-receive-more-effective-care](https://hbr.org/2018/08/research-having-a-black-doctor-led-black-men-to-receive-more-effective-care)\n\n[https://www.washingtonpost.com/health/black-baby-death-rate-cut-by-black-doctors/2021/01/08/e9f0f850-238a-11eb-952e-0c475972cfc0_story.html](https://www.washingtonpost.com/health/black-baby-death-rate-cut-by-black-doctors/2021/01/08/e9f0f850-238a-11eb-952e-0c475972cfc0_story.html)\n",
+            "6 . [https://www1.nyc.gov/site/doh/health/health-topics/race-to-justice.page](https://www1.nyc.gov/site/doh/health/health-topics/race-to-justice.page)\n",
+            "7 . [https://www1.nyc.gov/site/doh/health/neighborhood-health/neighborhood-health-action-centers.page](https://www1.nyc.gov/site/doh/health/neighborhood-health/neighborhood-health-action-centers.page)\n",
+            "8 . [https://www1.nyc.gov/assets/doh/downloads/pdf/csi/doula-report-2019.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/csi/doula-report-2019.pdf)\n",
+            "9 . [https://ibo.nyc.ny.us/cgi-park2/2019/07/are-hh-facilities-distributed-in-community-districts-with-the-highest-proportion-of-uninsured/](https://ibo.nyc.ny.us/cgi-park2/2019/07/are-hh-facilities-distributed-in-community-districts-with-the-highest-proportion-of-uninsured/)\n",
+            "10 . [https://www.nytimes.com/2020/12/29/nyregion/nyc-2020-crime-covid.html](https://www.nytimes.com/2020/12/29/nyregion/nyc-2020-crime-covid.html)\n",
+            "11 . [https://www.commonjustice.org/our_work/#common-justice-model](https://www.commonjustice.org/our_work/#common-justice-model)\n",
+            "Share\n\n[Share on Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery)\n\n[Share on Twitter](https://twitter.com/intent/tweet?text=https://www.yangforny.com/policies/racial-equity-in-healthcare-delivery)"
         ]
     }
 ]

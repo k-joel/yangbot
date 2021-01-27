@@ -3,7 +3,6 @@
 import json
 import requests
 import logging
-import html
 from bs4 import BeautifulSoup
 from unidecode import unidecode
 
@@ -39,8 +38,9 @@ def get_policies_metadata():
         title = link.find(['h3', 'h4'])
         if not title:
             continue
+        title = unidecode(title)
         url = link.get('href')
-        catgs = link.find('p').text.split(' | ')
+        catgs = link.find('p').text.split(' ∙ ')
         metadata.append(PolicyMetadata(title.text, url, catgs))
 
     return metadata
@@ -110,7 +110,6 @@ def get_policies_and_keywords():
 
 
 if __name__ == "__main__":
-
     logging.basicConfig()
     policies = load_policies()
 
