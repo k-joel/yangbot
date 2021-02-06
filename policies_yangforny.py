@@ -46,6 +46,10 @@ def get_policies_metadata():
     return metadata
 
 
+def has_class(elem, clas):
+    return 'class' in elem.attrs and clas in elem.attrs['class']
+
+
 def scrape_policy(title, url, categories):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
@@ -55,7 +59,9 @@ def scrape_policy(title, url, categories):
 
     sections = []
     for section in contents:
-        for child in section.children:
+        sec_child = section if not has_class(
+            section, 'wrapper') else section.next.next
+        for child in sec_child.children:
             text = conv.format(child)
             sections.append(text)
 
@@ -109,10 +115,18 @@ def get_policies_and_keywords():
     return (POLICIES, POLICY_KEYWORDS)
 
 
-if __name__ == "__main__":
-    logging.basicConfig()
-    policies = load_policies()
+def test_policy(url):
+    policy = scrape_policy('title', url, 'category')
+    full_text = '# ' + policy['title'] + '\n\n'
+    for text in policy['sections']:
+        full_text += text
+        full_text += '\n\n'
 
+    print(full_text)
+
+
+def dump_policies():
+    policies = load_policies()
     full_text = ''
     for policy in policies:
         full_text += '# ' + policy['title'] + '\n\n'
@@ -124,13 +138,8 @@ if __name__ == "__main__":
     with open('dump_yangforny.md', 'w') as file:
         file.write(full_text)
 
-    '''
-    policy = scrape_policy(
-        'title', 'https://www.yangforny.com/policies/reopening-stronger-schools', 'category')
-    full_text = '# ' + policy['title'] + '\n\n'
-    for text in policy['sections']:
-        full_text += text
-        full_text += '\n\n'
 
-    print(full_text)
-    '''
+if __name__ == "__main__":
+    logging.basicConfig()
+    # dump_policies()
+    test_policy('https://www.yangforny.com/policies/reopening-stronger-schools')
