@@ -32,7 +32,7 @@ MATCH_ERROR = "Sorry, I couldn't find a match for your query \'%s\'.\n\n"\
 COMMAND = '!yangbot'
 COMMAND2020 = '!yangbot-2020'
 MIN_PHRASE_LEN = 2
-CHARACTER_LIMIT = 9000
+CHARACTER_LIMIT = 9500
 
 TEST_FILE = 'test.md'
 LOG_FILE = 'log.txt'
@@ -245,5 +245,5 @@ def main_ex():
 
 
 if __name__ == "__main__":
-    # dev_main('green reinvestment')
+    #dev_main("people's bank of new york")
     main_ex()

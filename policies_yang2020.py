@@ -69,7 +69,7 @@ def load_policies():
         pass
     try:
         LOGGER.info(
-            'No json cache found, grabbing policy data from: ' + URL_POLICY)
+            'No cache found, grabbing policy data from: ' + URL_POLICY)
 
         policies_meta = get_policies_metadata()
         policies = []
@@ -100,10 +100,8 @@ def get_policies_and_keywords():
     return (POLICIES, POLICY_KEYWORDS)
 
 
-if __name__ == "__main__":
-    logging.basicConfig()
+def dump_policies():
     policies = load_policies()
-
     full_text = ''
     for policy in policies:
         full_text += '## ' + policy['title'] + '\n\n------\n\n'
@@ -114,3 +112,8 @@ if __name__ == "__main__":
 
     with open('dump_yang2020.md', 'w') as file:
         file.write(full_text)
+
+
+if __name__ == "__main__":
+    logging.basicConfig()
+    dump_policies()

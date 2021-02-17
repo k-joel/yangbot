@@ -35,13 +35,13 @@ def get_policies_metadata():
 
     metadata = []
     for link in filtered_links:
-        title = link.find(['h3', 'h4'])
-        if not title:
+        header = link.find(['h3', 'h4'])
+        if not header:
             continue
-        title = unidecode(title)
+        title = unidecode(header.text)
         url = link.get('href')
         catgs = link.find('p').text.split(' ∙ ')
-        metadata.append(PolicyMetadata(title.text, url, catgs))
+        metadata.append(PolicyMetadata(title, url, catgs))
 
     return metadata
 
@@ -55,15 +55,14 @@ def scrape_policy(title, url, categories):
     soup = BeautifulSoup(response.content, 'lxml')
     conv = MarkdownConverter(URL_PREFIX)
 
-    contents = soup.find('section', class_='wrapper').contents[1:]
+    divs = soup.find('section', class_='wrapper').contents[1:]
 
     sections = []
-    for section in contents:
-        sec_child = section if not has_class(
-            section, 'wrapper') else section.next.next
-        for child in sec_child.children:
-            text = conv.format(child)
-            sections.append(text)
+    for inner_div in divs:
+        for inner_div2 in inner_div:
+            for section in inner_div2:
+                text = conv.format(section)
+                sections.append(text)
 
     jsmap = {
         'title': title,
@@ -84,7 +83,7 @@ def load_policies():
         pass
     try:
         LOGGER.info(
-            'No json cache found, grabbing policy data from: ' + URL_POLICY)
+            'No cache found, grabbing policy data from: ' + URL_POLICY)
 
         policies_meta = get_policies_metadata()
         policies = []
@@ -142,4 +141,5 @@ def dump_policies():
 if __name__ == "__main__":
     logging.basicConfig()
     # dump_policies()
-    test_policy('https://www.yangforny.com/policies/reopening-stronger-schools')
+    # test_policy('https://www.yangforny.com/policies/cash-relief-covid-recovery')
+    test_policy('https://www.yangforny.com/policies/a-peoples-bank-of-new-york')
