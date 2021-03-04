@@ -245,5 +245,5 @@ def main_ex():
 
 
 if __name__ == "__main__":
-    dev_main("staten island")
-    # main_ex()
+    #dev_main("staten island")
+    main_ex()
