@@ -11,10 +11,14 @@ import policies_yang4nyc
 import logger
 
 ACTIVE_SUBREDDITS = [
+    'testingground4bots',
     'YangForPresidentHQ',
     'YangGang',
     'yangformayorhq',
-    'testingground4bots'
+    'BasicIncome',
+    'nyc',
+    'newyorkcity',
+    'Futurology',
 ]
 
 FOOTER = "^Beep ^Boop! ^I'm ^a ^bot! ^Bugs? ^Feedback? "\
