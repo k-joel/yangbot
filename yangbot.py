@@ -2,14 +2,13 @@
 
 import praw
 import prawcore
-import sys
-import logging
 import time
 from fuzzywuzzy import process
 from unidecode import unidecode
 
 import policies_yang2020
-import policies_yangforny
+import policies_yang4nyc
+import logger
 
 ACTIVE_SUBREDDITS = [
     'YangForPresidentHQ',
@@ -29,31 +28,14 @@ MATCH_ERROR = "Sorry, I couldn't find a match for your query \'%s\'.\n\n"\
     "If you think this is an error or you wish to add this phrase to the related keyword list,"\
     " please comment [here](https://www.reddit.com/user/yangpolicyinfo_bot/comments/kw56cu/discussion_thread/)"
 
-COMMAND = '!yangbot'
-COMMAND2020 = '!yangbot-2020'
+COMMAND_Y4NYC = '!yangbot'
+COMMAND_Y2020 = '!yangbot-2020'
 MIN_PHRASE_LEN = 2
 CHARACTER_LIMIT = 9500
 
 TEST_FILE = 'test.md'
-LOG_FILE = 'log.txt'
-LOG_FORMAT = '[%(asctime)s] %(levelname)-8s %(message)s'
 
-LOGGER = None
-
-
-def config_logger():
-    global LOGGER
-    if LOGGER:
-        return
-
-    LOGGER = logging.getLogger()
-    LOGGER.setLevel(logging.INFO)
-
-    console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.setLevel(logging.INFO)
-    console_handler.setFormatter(logging.Formatter(LOG_FORMAT))
-
-    LOGGER.addHandler(console_handler)
+LOGGER = logger.get_logger()
 
 
 def dump_text_to_file(text):
@@ -66,16 +48,6 @@ def process_keywords(keywords):
     for key, words in keywords.items():
         flattened += [(key, word) for word in words]
     return flattened
-
-
-'''
-def resolve_keywords(phrase, keywords):
-    for key, aliases in keywords.items():
-        if process.extractOne(phrase, aliases, score_cutoff=85):
-            LOGGER.info('Resolved keyword \'%s\' to \'%s\'' % (phrase, key))
-            return key
-    return phrase
-'''
 
 
 def resolve_keywords(phrase, processed_kws):
@@ -125,17 +97,14 @@ def build_policy(policy):
 
 
 def dev_main(phrase):
-    config_logger()
-
     if len(phrase) < MIN_PHRASE_LEN:
         return
 
-    policies_kws = policies_yangforny.get_policies_and_keywords()
-    if not policies_kws:
+    policies, policy_kws = policies_yang4nyc.get_policies_and_keywords()
+    if not policies:
         return
 
-    policies, keywords = policies_kws
-    processed_kws = process_keywords(keywords)
+    processed_kws = process_keywords(policy_kws)
 
     policy = match_policy(phrase, policies, processed_kws)
     if not policy:
@@ -154,21 +123,26 @@ def dev_main(phrase):
     # dump_text_to_file(text)
 
 
-def main():
-    config_logger()
+def test_keywords():
+    keywords = process_keywords(policies_yang4nyc.POLICY_KEYWORDS)
+    while True:
+        phrase = input("Input: ")
+        if phrase == '':
+            break
+        title = resolve_keywords(phrase, keywords)
 
+
+def main():
     LOGGER.info('--- Yangbot started ---')
 
-    new_policies_kws = policies_yangforny.get_policies_and_keywords()
-    old_policies_kws = policies_yang2020.get_policies_and_keywords()
-    if not new_policies_kws or not old_policies_kws:
+    new_policies, new_policy_kws = policies_yang4nyc.get_policies_and_keywords()
+    old_policies, old_policy_kws = policies_yang2020.get_policies_and_keywords()
+    if not new_policies or not old_policies:
         return
 
     lookup = {
-        COMMAND: (
-            new_policies_kws[0], process_keywords(new_policies_kws[1])),
-        COMMAND2020: (
-            old_policies_kws[0], process_keywords(old_policies_kws[1]))
+        COMMAND_Y4NYC: (new_policies, process_keywords(new_policy_kws)),
+        COMMAND_Y2020: (old_policies, process_keywords(old_policy_kws))
     }
 
     # init using praw.ini
@@ -186,7 +160,7 @@ def main():
         if comment == None or comment.author == reddit.user.me():
             continue
 
-        if len(comment.body) < len(COMMAND) or\
+        if len(comment.body) < len(COMMAND_Y4NYC) or\
                 comment.body[0] != '!':
             continue
 
@@ -245,5 +219,6 @@ def main_ex():
 
 
 if __name__ == "__main__":
-    #dev_main("staten island")
+    #dev_main("strong recovery")
+    # test_keywords()
     main_ex()

@@ -2,21 +2,21 @@
 
 import json
 import requests
-import logging
 from bs4 import BeautifulSoup
 from unidecode import unidecode
 
-from markdown import MarkdownConverter
-from keywords_yangforny import POLICY_KEYWORDS
+import logger
+from markdown import MarkdownFormatter
+from keywords_yang4nyc import POLICY_KEYWORDS
 
 URL_PREFIX = 'https://www.yangforny.com'
 URL_POLICY = 'https://www.yangforny.com/policies/'
 
-POLICIES_FILE = 'policies_yangforny.json'
+POLICIES_FILE = 'policies_yang4nyc.json'
 
 POLICIES = None
 
-LOGGER = logging.getLogger()
+LOGGER = logger.get_logger()
 
 
 class PolicyMetadata:
@@ -53,7 +53,7 @@ def has_class(elem, clas):
 def scrape_policy(title, url, categories):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
-    conv = MarkdownConverter(URL_PREFIX)
+    conv = MarkdownFormatter(URL_PREFIX)
 
     divs = soup.find('section', class_='wrapper').contents[1:]
 
@@ -109,8 +109,6 @@ def get_policies_and_keywords():
     global POLICIES
     if not POLICIES:
         POLICIES = load_policies()
-        if not POLICIES:
-            return None
     return (POLICIES, POLICY_KEYWORDS)
 
 
@@ -139,7 +137,6 @@ def dump_policies():
 
 
 if __name__ == "__main__":
-    logging.basicConfig()
     # dump_policies()
     # test_policy('https://www.yangforny.com/policies/cash-relief-covid-recovery')
     test_policy('https://www.yangforny.com/policies/a-peoples-bank-of-new-york')

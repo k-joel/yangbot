@@ -42,7 +42,7 @@ def strip_special(string):
     return s
 
 
-class MarkdownConverter:
+class MarkdownFormatter:
     '''
     Simple HTML to Markdown converter
 

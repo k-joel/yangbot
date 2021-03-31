@@ -2,12 +2,12 @@
 
 import json
 import requests
-import logging
 import html
 from bs4 import BeautifulSoup
 from unidecode import unidecode
 
-from markdown import MarkdownConverter
+import logger
+from markdown import MarkdownFormatter
 from keywords_yang2020 import POLICY_KEYWORDS
 
 URL_PREFIX = 'https://www.yang2020.com'
@@ -26,7 +26,7 @@ POLICIES_FILE = 'policies_yang2020.json'
 
 POLICIES = None
 
-LOGGER = logging.getLogger()
+LOGGER = logger.get_logger()
 
 
 def get_policies_metadata():
@@ -42,7 +42,7 @@ def get_policies_metadata():
 def scrape_policy(title, url, categories):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
-    conv = MarkdownConverter(URL_PREFIX, [], FILTERED_TAGS)
+    conv = MarkdownFormatter(URL_PREFIX, [], FILTERED_TAGS)
 
     sections = []
     for cls_ in SECTIONS:
@@ -95,8 +95,6 @@ def get_policies_and_keywords():
     global POLICIES
     if not POLICIES:
         POLICIES = load_policies()
-        if not POLICIES:
-            return None
     return (POLICIES, POLICY_KEYWORDS)
 
 
@@ -115,5 +113,4 @@ def dump_policies():
 
 
 if __name__ == "__main__":
-    logging.basicConfig()
     dump_policies()
