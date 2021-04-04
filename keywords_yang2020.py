@@ -1101,6 +1101,7 @@ POLICY_KEYWORDS = {
         "illegal alien"
     ],
     "Pathway to Citizenship for Undocumented Immigrants": [
+        "pathway to citizenship",
         "immigration",
         "immigrant",
         "citizenship",
