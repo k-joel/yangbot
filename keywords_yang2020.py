@@ -1083,7 +1083,6 @@ POLICY_KEYWORDS = {
         "illegal immigration",
         "citizenship",
         "citizen",
-        "pathway to citizenship",
         "dream act",
         "reform"
     ],
