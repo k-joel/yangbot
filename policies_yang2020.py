@@ -113,4 +113,5 @@ def dump_policies():
 
 
 if __name__ == "__main__":
-    dump_policies()
+    load_policies()
+    # dump_policies()

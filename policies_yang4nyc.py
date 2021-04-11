@@ -137,6 +137,7 @@ def dump_policies():
 
 
 if __name__ == "__main__":
+    load_policies()
     # dump_policies()
     # test_policy('https://www.yangforny.com/policies/cash-relief-covid-recovery')
-    test_policy('https://www.yangforny.com/policies/a-peoples-bank-of-new-york')
+    # test_policy('https://www.yangforny.com/policies/a-peoples-bank-of-new-york')
