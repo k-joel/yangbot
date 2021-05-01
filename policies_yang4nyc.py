@@ -26,6 +26,20 @@ class PolicyMetadata:
         self.categories = categories
 
 
+def get_title(header):
+    return unidecode(header.text)
+
+
+def get_categories(link):
+    ptag = link.find('p')
+    if ptag:
+        return ptag.text.split(' ∙ ')
+    divtag = link.find('div')
+    if divtag:
+        return divtag.text.split(' ∙ ')
+    return ''
+
+
 def get_policies_metadata():
     response = requests.get(URL_POLICY)
     soup = BeautifulSoup(response.content, 'lxml')
@@ -38,9 +52,9 @@ def get_policies_metadata():
         header = link.find(['h3', 'h4'])
         if not header:
             continue
-        title = unidecode(header.text)
         url = link.get('href')
-        catgs = link.find('p').text.split(' ∙ ')
+        title = get_title(header)
+        catgs = get_categories(link)
         metadata.append(PolicyMetadata(title, url, catgs))
 
     return metadata
